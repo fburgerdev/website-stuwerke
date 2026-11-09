@@ -1,0 +1,1714 @@
+[
+ {
+  "id": "aachen",
+  "name": "Studierendenwerk Aachen",
+  "short": "Aachen",
+  "state": "NW",
+  "seat": "Aachen",
+  "lat": 50.776,
+  "lon": 6.084,
+  "students": 60782,
+  "cities": [
+   "Aachen",
+   "Jülich"
+  ],
+  "website": "https://www.studierendenwerk-aachen.de",
+  "universities": [
+   "RWTH Aachen",
+   "Fachhochschule Aachen",
+   "Hochschule für Musik und Tanz Köln, Aachen site",
+   "Katholische Hochschule NRW, Aachen site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Sebastian Böstel",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "augsburg",
+  "name": "Studierendenwerk Augsburg",
+  "short": "Augsburg",
+  "state": "BY",
+  "seat": "Augsburg",
+  "lat": 48.334,
+  "lon": 10.898,
+  "students": 35282,
+  "cities": [
+   "Augsburg",
+   "Kempten",
+   "Neu-Ulm"
+  ],
+  "website": "https://www.studierendenwerk-augsburg.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Selina Exarchos",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "berlin",
+  "name": "studierendenWERK BERLIN",
+  "short": "Berlin",
+  "state": "BE",
+  "seat": "Berlin",
+  "lat": 52.513,
+  "lon": 13.327,
+  "students": 160916,
+  "cities": [
+   "Berlin"
+  ],
+  "website": "https://www.stw.berlin",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Petra Mai-Hartung",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "bielefeld",
+  "name": "Studierendenwerk Bielefeld",
+  "short": "Bielefeld",
+  "state": "NW",
+  "seat": "Bielefeld",
+  "lat": 52.03,
+  "lon": 8.532,
+  "students": 39793,
+  "cities": [
+   "Bielefeld",
+   "Detmold",
+   "Höxter",
+   "Lemgo",
+   "Minden"
+  ],
+  "website": "https://www.studierendenwerk-bielefeld.de",
+  "universities": [
+   "Universität Bielefeld",
+   "Hochschule Bielefeld",
+   "Technische Hochschule Ostwestfalen-Lippe",
+   "Hochschule für Musik Detmold"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Achim Landgraf",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "bochum",
+  "name": "Akademisches Förderungswerk in Bochum",
+  "short": "Bochum",
+  "state": "NW",
+  "seat": "Bochum",
+  "lat": 51.446,
+  "lon": 7.262,
+  "students": 62854,
+  "cities": [
+   "Bochum",
+   "Gelsenkirchen"
+  ],
+  "website": "https://www.akafoe.de",
+  "universities": [
+   "Ruhr-Universität Bochum",
+   "Hochschule Bochum",
+   "Westfälische Hochschule Gelsenkirchen",
+   "Technische Hochschule Georg Agricola",
+   "EBZ Business School",
+   "Hochschule für Gesundheit",
+   "Evangelische Hochschule Rheinland-Westfalen-Lippe",
+   "Folkwang Universität der Künste, Bochum site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Frank Weeke",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "bodensee",
+  "name": "Seezeit Studierendenwerk Bodensee",
+  "short": "Bodensee",
+  "state": "BW",
+  "seat": "Konstanz",
+  "lat": 47.69,
+  "lon": 9.188,
+  "students": 24728,
+  "cities": [
+   "Isny",
+   "Konstanz",
+   "Ravensburg",
+   "Weingarten"
+  ],
+  "website": "https://www.seezeit.com",
+  "universities": [
+   "Universität Konstanz",
+   "Pädagogische Hochschule Weingarten",
+   "Hochschule Konstanz (HTWG)",
+   "Hochschule Ravensburg-Weingarten",
+   "DHBW Ravensburg with Friedrichshafen campus"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Gisa Klaus",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [
+   {
+    "date": "2025-06-23",
+    "text": "Published a written response to the MENSArevolution demands, stating the aim of several vegan and vegetarian options every day as a normal part of the menu.",
+    "source": "https://seezeit.com/fileadmin/Kundendaten/Bilder/01_Essen/04_Oekologie_Nachhaltigkeit/250623_Mensarevolution_Statement_Seezeit.pdf"
+   },
+   {
+    "date": "2026-01",
+    "text": "Tested a vegan-only menu on four Thursdays in January 2026 and surveyed guests about it.",
+    "source": "https://seezeit.com/fileadmin/Kundendaten/Downloads/01_Essen/04_Oekologie_und_Nachhaltigkeit/260220_HG_Umfrage_Veganuary_Auswertung.pdf"
+   }
+  ],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "bonn",
+  "name": "Studierendenwerk Bonn",
+  "short": "Bonn",
+  "state": "NW",
+  "seat": "Bonn",
+  "lat": 50.733,
+  "lon": 7.1,
+  "students": 44060,
+  "cities": [
+   "Bonn",
+   "Rheinbach",
+   "Sankt Augustin"
+  ],
+  "website": "https://www.studierendenwerk-bonn.de",
+  "universities": [
+   "Universität Bonn",
+   "Hochschule Bonn-Rhein-Sieg"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Hans Jürgen Huber",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "bremen",
+  "name": "Studierendenwerk Bremen",
+  "short": "Bremen",
+  "state": "HB",
+  "seat": "Bremen",
+  "lat": 53.107,
+  "lon": 8.853,
+  "students": 30647,
+  "cities": [
+   "Bremen",
+   "Bremerhaven"
+  ],
+  "website": "https://www.stw-bremen.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Hauke Kieschnick",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "chemnitz-zwickau",
+  "name": "Studentenwerk Chemnitz-Zwickau",
+  "short": "Chemnitz-Zwickau",
+  "state": "SN",
+  "seat": "Chemnitz",
+  "lat": 50.814,
+  "lon": 12.929,
+  "students": 11384,
+  "cities": [
+   "Breitenbrunn",
+   "Chemnitz",
+   "Glauchau",
+   "Plauen",
+   "Schneeberg",
+   "Zwickau"
+  ],
+  "website": "https://www.swcz.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Anja Schönherr",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "darmstadt",
+  "name": "Studierendenwerk Darmstadt",
+  "short": "Darmstadt",
+  "state": "HE",
+  "seat": "Darmstadt",
+  "lat": 49.875,
+  "lon": 8.657,
+  "students": 38394,
+  "cities": [
+   "Darmstadt",
+   "Dieburg"
+  ],
+  "website": "https://www.stwda.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Wolfgang Rettich",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "dortmund",
+  "name": "Studierendenwerk Dortmund",
+  "short": "Dortmund",
+  "state": "NW",
+  "seat": "Dortmund",
+  "lat": 51.49,
+  "lon": 7.414,
+  "students": 126365,
+  "cities": [
+   "Dortmund",
+   "Hagen",
+   "Iserlohn",
+   "Meschede",
+   "Soest"
+  ],
+  "website": "https://www.stwdo.de",
+  "universities": [
+   "Technische Universität Dortmund",
+   "Fachhochschule Dortmund",
+   "FernUniversität in Hagen",
+   "Fachhochschule Südwestfalen",
+   "ISM Dortmund"
+  ],
+  "people": [
+   {
+    "role": "Commercial managing director",
+    "name": "Burkhard Schwemin",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   },
+   {
+    "role": "Managing director",
+    "name": "Johannes Zedel",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "dresden",
+  "name": "Studentenwerk Dresden",
+  "short": "Dresden",
+  "state": "SN",
+  "seat": "Dresden",
+  "lat": 51.028,
+  "lon": 13.731,
+  "students": 39195,
+  "cities": [
+   "Bautzen",
+   "Dresden",
+   "Görlitz",
+   "Riesa",
+   "Zittau"
+  ],
+  "website": "https://www.studentenwerk-dresden.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Michael Rollberg",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "duesseldorf",
+  "name": "Studierendenwerk Düsseldorf",
+  "short": "Düsseldorf",
+  "state": "NW",
+  "seat": "Düsseldorf",
+  "lat": 51.19,
+  "lon": 6.795,
+  "students": 59618,
+  "cities": [
+   "Düsseldorf",
+   "Kamp-Lintfort",
+   "Kleve",
+   "Krefeld",
+   "Mönchengladbach"
+  ],
+  "website": "https://www.stw-d.de",
+  "universities": [
+   "Heinrich-Heine-Universität Düsseldorf",
+   "Hochschule Düsseldorf",
+   "Kunstakademie Düsseldorf",
+   "Robert Schumann Hochschule Düsseldorf",
+   "Hochschule Niederrhein",
+   "Hochschule Rhein-Waal"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Stephan Förster",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "erlangen-nuernberg",
+  "name": "Studierendenwerk Erlangen-Nürnberg",
+  "short": "Erlangen-Nürnberg",
+  "state": "BY",
+  "seat": "Erlangen",
+  "lat": 49.597,
+  "lon": 11.004,
+  "students": 74995,
+  "cities": [
+   "Ansbach",
+   "Eichstätt",
+   "Erlangen",
+   "Fürth",
+   "Ingolstadt",
+   "Neuburg a. d. Donau",
+   "Neuendettelsau",
+   "Nürnberg",
+   "Triesdorf"
+  ],
+  "website": "https://www.werkswelt.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Mathias M. Meyer",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "essen-duisburg",
+  "name": "Studierendenwerk Essen-Duisburg",
+  "short": "Essen-Duisburg",
+  "state": "NW",
+  "seat": "Essen",
+  "lat": 51.463,
+  "lon": 7.005,
+  "students": 44790,
+  "cities": [
+   "Bottrop",
+   "Duisburg",
+   "Essen",
+   "Mülheim"
+  ],
+  "website": "https://www.stw-edu.de",
+  "universities": [
+   "Universität Duisburg-Essen",
+   "Folkwang Universität der Künste, Essen and Duisburg sites",
+   "Hochschule Ruhr West"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Michael Dahlhoff",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "frankfurt",
+  "name": "MainSWerk – Studierendenwerk Frankfurt am Main",
+  "short": "Frankfurt am Main",
+  "state": "HE",
+  "seat": "Frankfurt am Main",
+  "lat": 50.127,
+  "lon": 8.667,
+  "students": 71210,
+  "cities": [
+   "Frankfurt am Main",
+   "Geisenheim",
+   "Offenbach am Main",
+   "Rüsselsheim am Main",
+   "Wiesbaden"
+  ],
+  "website": "https://www.swffm.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Konrad Zündorf",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "freiberg",
+  "name": "Studentenwerk Freiberg",
+  "short": "Freiberg",
+  "state": "SN",
+  "seat": "Freiberg",
+  "lat": 50.925,
+  "lon": 13.33,
+  "students": 10661,
+  "cities": [
+   "Freiberg",
+   "Mittweida"
+  ],
+  "website": "https://www.studentenwerk-freiberg.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Thomas Schmalz",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "freiburg",
+  "name": "Studierendenwerk Freiburg",
+  "short": "Freiburg",
+  "state": "BW",
+  "seat": "Freiburg",
+  "lat": 47.994,
+  "lon": 7.846,
+  "students": 46535,
+  "cities": [
+   "Freiburg",
+   "Furtwangen",
+   "Kehl",
+   "Lörrach",
+   "Offenburg",
+   "Villingen-Schwenningen"
+  ],
+  "website": "https://www.swfr.de",
+  "universities": [
+   "Universität Freiburg",
+   "Pädagogische Hochschule Freiburg",
+   "Hochschule für Musik Freiburg",
+   "Hochschule Furtwangen",
+   "Hochschule Offenburg",
+   "Hochschule für öffentliche Verwaltung Kehl",
+   "Hochschule für Polizei Villingen-Schwenningen",
+   "DHBW Lörrach",
+   "DHBW Villingen-Schwenningen"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Clemens Metz",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "giessen",
+  "name": "Studierendenwerk Gießen",
+  "short": "Gießen",
+  "state": "HE",
+  "seat": "Gießen",
+  "lat": 50.58,
+  "lon": 8.677,
+  "students": 47732,
+  "cities": [
+   "Friedberg",
+   "Fulda",
+   "Gießen",
+   "Wetzlar"
+  ],
+  "website": "https://www.stwgi.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Gero Lottermann",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "goettingen",
+  "name": "Studierendenwerk Göttingen",
+  "short": "Göttingen",
+  "state": "NI",
+  "seat": "Göttingen",
+  "lat": 51.542,
+  "lon": 9.936,
+  "students": 29967,
+  "cities": [
+   "Göttingen"
+  ],
+  "website": "https://www.studierendenwerk-goettingen.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Prof. Dr. Jörg Magull",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "greifswald",
+  "name": "Studierendenwerk Greifswald",
+  "short": "Greifswald",
+  "state": "MV",
+  "seat": "Greifswald",
+  "lat": 54.093,
+  "lon": 13.375,
+  "students": 13619,
+  "cities": [
+   "Greifswald",
+   "Neubrandenburg",
+   "Stralsund"
+  ],
+  "website": "https://www.stw-greifswald.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dr. Cornelia Wolf-Körnert",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "halle",
+  "name": "Studentenwerk Halle",
+  "short": "Halle",
+  "state": "ST",
+  "seat": "Halle (Saale)",
+  "lat": 51.486,
+  "lon": 11.969,
+  "students": 29463,
+  "cities": [
+   "Bernburg",
+   "Dessau",
+   "Halle (Saale)",
+   "Köthen",
+   "Merseburg"
+  ],
+  "website": "https://www.studentenwerk-halle.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Detlef Kohrs",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [
+   {
+    "date": "2026-01",
+    "text": "Ran the Mensa Neuwerk with a fully vegan menu for the month of January 2026.",
+    "source": "https://www.hogapage.de/nachrichten/food/ernaehrung/veganuary-2026-macht-ern%C3%A4hrungswandel-in-mensen-und-kantinen-sichtbar/"
+   }
+  ]
+ },
+ {
+  "id": "hamburg",
+  "name": "Studierendenwerk Hamburg",
+  "short": "Hamburg",
+  "state": "HH",
+  "seat": "Hamburg",
+  "lat": 53.567,
+  "lon": 9.985,
+  "students": 70737,
+  "cities": [
+   "Hamburg"
+  ],
+  "website": "https://www.stwhh.de",
+  "universities": [],
+  "people": [],
+  "milestones": []
+ },
+ {
+  "id": "hannover",
+  "name": "Studentenwerk Hannover",
+  "short": "Hannover",
+  "state": "NI",
+  "seat": "Hannover",
+  "lat": 52.383,
+  "lon": 9.72,
+  "students": 42806,
+  "cities": [
+   "Hannover",
+   "Nienburg"
+  ],
+  "website": "https://www.studentenwerk-hannover.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Michael Knüppel",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "heidelberg",
+  "name": "Studierendenwerk Heidelberg",
+  "short": "Heidelberg",
+  "state": "BW",
+  "seat": "Heidelberg",
+  "lat": 49.41,
+  "lon": 8.706,
+  "students": 49923,
+  "cities": [
+   "Bad Mergentheim",
+   "Heidelberg",
+   "Heilbronn",
+   "Künzelsau",
+   "Mosbach",
+   "Schwäbisch-Hall",
+   "Schwetzingen"
+  ],
+  "website": "https://www.studierendenwerk-heidelberg.de",
+  "universities": [
+   "Universität Heidelberg",
+   "Pädagogische Hochschule Heidelberg",
+   "Hochschule Heilbronn",
+   "Hochschule für Rechtspflege Schwetzingen",
+   "DHBW Mosbach with Bad Mergentheim campus",
+   "DHBW Heilbronn",
+   "DHBW Center for Advanced Studies"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Prof. Dr. Perizat Daglioglu",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "kaiserslautern",
+  "name": "Studierendenwerk Kaiserslautern",
+  "short": "Kaiserslautern",
+  "state": "RP",
+  "seat": "Kaiserslautern",
+  "lat": 49.424,
+  "lon": 7.752,
+  "students": 14867,
+  "cities": [
+   "Kaiserslautern",
+   "Pirmasens",
+   "Zweibrücken"
+  ],
+  "website": "https://www.studierendenwerk-kaiserslautern.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Marco Zimmer",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "karlsruhe",
+  "name": "Studierendenwerk Karlsruhe",
+  "short": "Karlsruhe",
+  "state": "BW",
+  "seat": "Karlsruhe",
+  "lat": 49.012,
+  "lon": 8.416,
+  "students": 43311,
+  "cities": [
+   "Bad Liebenzell",
+   "Karlsruhe",
+   "Pforzheim"
+  ],
+  "website": "https://www.sw-ka.de",
+  "universities": [
+   "Karlsruher Institut für Technologie (KIT)",
+   "Pädagogische Hochschule Karlsruhe",
+   "Staatliche Akademie der Bildenden Künste Karlsruhe",
+   "Staatliche Hochschule für Gestaltung Karlsruhe",
+   "Hochschule für Musik Karlsruhe",
+   "Hochschule Karlsruhe",
+   "Hochschule Pforzheim",
+   "DHBW Karlsruhe"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Michael Postert",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "kassel",
+  "name": "Studierendenwerk Kassel",
+  "short": "Kassel",
+  "state": "HE",
+  "seat": "Kassel",
+  "lat": 51.322,
+  "lon": 9.507,
+  "students": 21352,
+  "cities": [
+   "Bad Sooden-Allendorf",
+   "Kassel",
+   "Witzenhausen"
+  ],
+  "website": "https://www.studierendenwerk-kassel.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Christa Ambrosius",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "koblenz",
+  "name": "Studierendenwerk Koblenz",
+  "short": "Koblenz",
+  "state": "RP",
+  "seat": "Koblenz",
+  "lat": 50.363,
+  "lon": 7.559,
+  "students": 18275,
+  "cities": [
+   "Höhr-Grenzhausen",
+   "Koblenz",
+   "Remagen"
+  ],
+  "website": "https://www.studierendenwerk-koblenz.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Arne Kalkan",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "koeln",
+  "name": "Kölner Studierendenwerk",
+  "short": "Köln",
+  "state": "NW",
+  "seat": "Köln",
+  "lat": 50.928,
+  "lon": 6.928,
+  "students": 76786,
+  "cities": [
+   "Gummersbach",
+   "Köln",
+   "Leverkusen-Opladen"
+  ],
+  "website": "https://www.kstw.de",
+  "universities": [
+   "Universität zu Köln",
+   "Deutsche Sporthochschule Köln",
+   "Technische Hochschule Köln",
+   "Hochschule für Musik und Tanz Köln",
+   "Kunsthochschule für Medien Köln",
+   "Cologne Business School",
+   "Katholische Hochschule NRW, Köln site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Jörg J. Schmitz",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "leipzig",
+  "name": "Studentenwerk Leipzig",
+  "short": "Leipzig",
+  "state": "SN",
+  "seat": "Leipzig",
+  "lat": 51.338,
+  "lon": 12.378,
+  "students": 40560,
+  "cities": [
+   "Leipzig"
+  ],
+  "website": "https://www.studentenwerk-leipzig.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dr. Andrea Diekhof",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "magdeburg",
+  "name": "Studentenwerk Magdeburg",
+  "short": "Magdeburg",
+  "state": "ST",
+  "seat": "Magdeburg",
+  "lat": 52.139,
+  "lon": 11.647,
+  "students": 20524,
+  "cities": [
+   "Friedensau",
+   "Magdeburg",
+   "Stendal",
+   "Wernigerode"
+  ],
+  "website": "https://www.studentenwerk-magdeburg.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Ute Hellwig",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "mainz",
+  "name": "Studierendenwerk Mainz",
+  "short": "Mainz",
+  "state": "RP",
+  "seat": "Mainz",
+  "lat": 49.992,
+  "lon": 8.241,
+  "students": 36301,
+  "cities": [
+   "Bingen",
+   "Mainz"
+  ],
+  "website": "https://www.studierendenwerk-mainz.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Alexandra Diestel-Feddersen",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "mannheim",
+  "name": "Studierendenwerk Mannheim",
+  "short": "Mannheim",
+  "state": "BW",
+  "seat": "Mannheim",
+  "lat": 49.483,
+  "lon": 8.462,
+  "students": 23108,
+  "cities": [
+   "Mannheim"
+  ],
+  "website": "https://www.stw-ma.de",
+  "universities": [
+   "Universität Mannheim",
+   "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+   "Technische Hochschule Mannheim",
+   "DHBW Mannheim",
+   "Popakademie Baden-Württemberg"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Peter Pahle",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [
+   {
+    "date": "2025",
+    "text": "Registered v²onnem as a brand: a line of vegan products made in the Studierendenwerk's own kitchen and served across its canteens.",
+    "source": "https://www.uni-mannheim.de/en/newsroom/forum/edition-1-2026/campus-life/vegan-butcher-shop/"
+   }
+  ],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "marburg",
+  "name": "Studierendenwerk Marburg",
+  "short": "Marburg",
+  "state": "HE",
+  "seat": "Marburg",
+  "lat": 50.81,
+  "lon": 8.774,
+  "students": 20498,
+  "cities": [
+   "Marburg"
+  ],
+  "website": "https://www.studierendenwerk-marburg.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dr. Uwe Grebe",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "muenchen",
+  "name": "Studierendenwerk München Oberbayern",
+  "short": "München Oberbayern",
+  "state": "BY",
+  "seat": "München",
+  "lat": 48.156,
+  "lon": 11.582,
+  "students": 143311,
+  "cities": [
+   "Benediktbeuern",
+   "Burghausen",
+   "Freising-Weihenstephan",
+   "Garching",
+   "Mühldorf am Inn",
+   "München",
+   "Rosenheim",
+   "Weihenstephan"
+  ],
+  "website": "https://www.stwm.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Claudia Meijering",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "muenster",
+  "name": "Studierendenwerk Münster",
+  "short": "Münster",
+  "state": "NW",
+  "seat": "Münster",
+  "lat": 51.963,
+  "lon": 7.613,
+  "students": 56792,
+  "cities": [
+   "Münster",
+   "Steinfurt"
+  ],
+  "website": "https://www.stw-muenster.de",
+  "universities": [
+   "Universität Münster",
+   "Fachhochschule Münster",
+   "Kunstakademie Münster",
+   "Katholische Hochschule NRW, Münster site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dr. Christoph Holtwisch",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "niederbayern-oberpfalz",
+  "name": "Studierendenwerk Niederbayern/Oberpfalz",
+  "short": "Niederbayern/Oberpfalz",
+  "state": "BY",
+  "seat": "Regensburg",
+  "lat": 48.998,
+  "lon": 12.095,
+  "students": 57887,
+  "cities": [
+   "Cham",
+   "Deggendorf",
+   "Landshut",
+   "Passau",
+   "Pfarrkirchen",
+   "Regensburg",
+   "Straubing"
+  ],
+  "website": "https://www.stwno.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Doreen Steudte",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "oberfranken",
+  "name": "Studierendenwerk Oberfranken",
+  "short": "Oberfranken",
+  "state": "BY",
+  "seat": "Bayreuth",
+  "lat": 49.928,
+  "lon": 11.586,
+  "students": 24814,
+  "cities": [
+   "Amberg",
+   "Bayreuth",
+   "Coburg",
+   "Hof",
+   "Münchberg",
+   "Weiden"
+  ],
+  "website": "https://www.swo.bayern",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Josef Tost",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "oldenburg",
+  "name": "Studierendenwerk Oldenburg",
+  "short": "Oldenburg",
+  "state": "NI",
+  "seat": "Oldenburg",
+  "lat": 53.147,
+  "lon": 8.182,
+  "students": 24353,
+  "cities": [
+   "Elsfleth",
+   "Emden",
+   "Oldenburg",
+   "Wilhelmshaven"
+  ],
+  "website": "https://www.studierendenwerk-oldenburg.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Ted Thurner",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "osnabrueck",
+  "name": "Studierendenwerk Osnabrück",
+  "short": "Osnabrück",
+  "state": "NI",
+  "seat": "Osnabrück",
+  "lat": 52.271,
+  "lon": 8.044,
+  "students": 29857,
+  "cities": [
+   "Lingen/Ems",
+   "Osnabrück",
+   "Vechta"
+  ],
+  "website": "https://www.sw-os.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Stefan Kobilke",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "ost-brandenburg",
+  "name": "Studierendenwerk Ost:Brandenburg",
+  "short": "Ost:Brandenburg",
+  "state": "BB",
+  "seat": "Frankfurt (Oder)",
+  "lat": 52.342,
+  "lon": 14.554,
+  "students": 13431,
+  "cities": [
+   "Cottbus",
+   "Eberswalde",
+   "Frankfurt (Oder)",
+   "Senftenberg"
+  ],
+  "website": "https://www.swobb.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dorit Wehling",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "ostniedersachsen",
+  "name": "Studentenwerk OstNiedersachsen",
+  "short": "OstNiedersachsen",
+  "state": "NI",
+  "seat": "Braunschweig",
+  "lat": 52.274,
+  "lon": 10.527,
+  "students": 51800,
+  "cities": [
+   "Braunschweig",
+   "Buxtehude",
+   "Clausthal-Zellerfeld",
+   "Hildesheim",
+   "Holzminden",
+   "Lüneburg",
+   "Salzgitter",
+   "Suderburg",
+   "Wolfenbüttel",
+   "Wolfsburg"
+  ],
+  "website": "https://www.stw-on.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Sönke Nimz",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "paderborn",
+  "name": "Studierendenwerk Paderborn",
+  "short": "Paderborn",
+  "state": "NW",
+  "seat": "Paderborn",
+  "lat": 51.708,
+  "lon": 8.771,
+  "students": 22559,
+  "cities": [
+   "Hamm",
+   "Lippstadt",
+   "Paderborn"
+  ],
+  "website": "https://www.studierendenwerk-pb.de",
+  "universities": [
+   "Universität Paderborn",
+   "Hochschule Hamm-Lippstadt",
+   "Katholische Hochschule NRW, Paderborn site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Ulrich Schmidt",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "rostock-wismar",
+  "name": "Studierendenwerk Rostock-Wismar",
+  "short": "Rostock-Wismar",
+  "state": "MV",
+  "seat": "Rostock",
+  "lat": 54.075,
+  "lon": 12.105,
+  "students": 15966,
+  "cities": [
+   "Heiligendamm",
+   "Rostock",
+   "Warnemünde",
+   "Wismar"
+  ],
+  "website": "https://www.stw-rw.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Kai Hörig",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "saarland",
+  "name": "Studierendenwerk Saarland",
+  "short": "Saarland",
+  "state": "SL",
+  "seat": "Saarbrücken",
+  "lat": 49.255,
+  "lon": 7.041,
+  "students": 22308,
+  "cities": [
+   "Homburg",
+   "Saarbrücken"
+  ],
+  "website": "https://www.stw-saarland.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Carsten Rast",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "schleswig-holstein",
+  "name": "Studentenwerk Schleswig-Holstein",
+  "short": "Schleswig-Holstein",
+  "state": "SH",
+  "seat": "Kiel",
+  "lat": 54.339,
+  "lon": 10.12,
+  "students": 55815,
+  "cities": [
+   "Flensburg",
+   "Heide",
+   "Kiel",
+   "Lübeck",
+   "Rendsburg",
+   "Wedel"
+  ],
+  "website": "https://www.studentenwerk.sh",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Susann Schrader",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "siegen",
+  "name": "Studierendenwerk Siegen",
+  "short": "Siegen",
+  "state": "NW",
+  "seat": "Siegen",
+  "lat": 50.906,
+  "lon": 8.028,
+  "students": 14477,
+  "cities": [
+   "Siegen"
+  ],
+  "website": "https://www.studierendenwerk-siegen.de",
+  "universities": [
+   "Universität Siegen"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dr. Insa Deeken",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ },
+ {
+  "id": "stuttgart",
+  "name": "Studierendenwerk Stuttgart",
+  "short": "Stuttgart",
+  "state": "BW",
+  "seat": "Stuttgart",
+  "lat": 48.782,
+  "lon": 9.172,
+  "students": 56426,
+  "cities": [
+   "Esslingen",
+   "Göppingen",
+   "Horb",
+   "Ludwigsburg",
+   "Stuttgart"
+  ],
+  "website": "https://www.studierendenwerk-stuttgart.de",
+  "universities": [
+   "Universität Stuttgart",
+   "Pädagogische Hochschule Ludwigsburg",
+   "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+   "Hochschule Esslingen",
+   "Hochschule der Medien Stuttgart",
+   "Hochschule für Technik Stuttgart",
+   "Hochschule für öffentliche Verwaltung und Finanzen Ludwigsburg",
+   "DHBW Stuttgart with Horb campus",
+   "Filmakademie Baden-Württemberg",
+   "Akademie für Darstellende Kunst Baden-Württemberg",
+   "Staatliche Akademie der Bildenden Künste Stuttgart"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Marco Abe",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "thueringen",
+  "name": "Studierendenwerk Thüringen",
+  "short": "Thüringen",
+  "state": "TH",
+  "seat": "Jena",
+  "lat": 50.929,
+  "lon": 11.582,
+  "students": 44915,
+  "cities": [
+   "Eisenach",
+   "Erfurt",
+   "Gera",
+   "Ilmenau",
+   "Jena",
+   "Nordhausen",
+   "Schmalkalden",
+   "Weimar"
+  ],
+  "website": "https://www.stw-thueringen.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Torsten Schubert",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "trier",
+  "name": "Studierendenwerk Trier",
+  "short": "Trier",
+  "state": "RP",
+  "seat": "Trier",
+  "lat": 49.746,
+  "lon": 6.688,
+  "students": 16912,
+  "cities": [
+   "Birkenfeld",
+   "Trier"
+  ],
+  "website": "https://www.studiwerk.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Andreas Wagner",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "tuebingen-hohenheim",
+  "name": "Studierendenwerk Tübingen-Hohenheim",
+  "short": "Tübingen-Hohenheim",
+  "state": "BW",
+  "seat": "Tübingen",
+  "lat": 48.535,
+  "lon": 9.062,
+  "students": 52334,
+  "cities": [
+   "Albstadt",
+   "Geislingen",
+   "Hohenheim",
+   "Nürtingen",
+   "Reutlingen",
+   "Rottenburg am Neckar",
+   "Sigmaringen",
+   "Trossingen",
+   "Tübingen"
+  ],
+  "website": "https://www.my-stuwe.de",
+  "universities": [
+   "Universität Tübingen",
+   "Universität Hohenheim",
+   "Staatliche Hochschule für Musik Trossingen",
+   "Hochschule Albstadt-Sigmaringen",
+   "Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen",
+   "Hochschule Reutlingen",
+   "Hochschule für Forstwirtschaft Rottenburg"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Edith Hein",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "ulm",
+  "name": "Studierendenwerk Ulm",
+  "short": "Ulm",
+  "state": "BW",
+  "seat": "Ulm",
+  "lat": 48.422,
+  "lon": 9.955,
+  "students": 24931,
+  "cities": [
+   "Aalen",
+   "Biberach",
+   "Heidenheim",
+   "Schwäbisch-Gmünd",
+   "Ulm"
+  ],
+  "website": "https://www.studierendenwerk-ulm.de",
+  "universities": [
+   "Universität Ulm",
+   "Pädagogische Hochschule Schwäbisch Gmünd",
+   "Hochschule Aalen",
+   "Hochschule Biberach",
+   "Hochschule für Gestaltung Schwäbisch Gmünd",
+   "Technische Hochschule Ulm",
+   "DHBW Heidenheim"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Claus Kaiser",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://mwk.baden-wuerttemberg.de/fileadmin/redaktion/m-mwk/intern/dateien/pdf/Studium/Studierendenwerke-internet-auftritt_-_Stand_Oktober_2025.pdf"
+ },
+ {
+  "id": "vorderpfalz",
+  "name": "Studierendenwerk Vorderpfalz",
+  "short": "Vorderpfalz",
+  "state": "RP",
+  "seat": "Landau",
+  "lat": 49.204,
+  "lon": 8.109,
+  "students": 15081,
+  "cities": [
+   "Germersheim",
+   "Landau in der Pfalz",
+   "Ludwigshafen",
+   "Worms"
+  ],
+  "website": "https://www.stw-vp.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Andreas Schülke",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": []
+ },
+ {
+  "id": "west-brandenburg",
+  "name": "Studierendenwerk West:Brandenburg",
+  "short": "West:Brandenburg",
+  "state": "BB",
+  "seat": "Potsdam",
+  "lat": 52.4,
+  "lon": 13.013,
+  "students": 29786,
+  "cities": [
+   "Brandenburg an der Havel",
+   "Potsdam",
+   "Wildau"
+  ],
+  "website": "https://www.stwwb.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Peter Heiß",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [
+   {
+    "date": "2026-05-13",
+    "text": "Reported serving 542,474 vegan dishes in 2025 at the three University of Potsdam canteens, while keeping meat and fish on the menu.",
+    "source": "https://www.uni-potsdam.de/de/nachrichten/detail/2026-05-13-mehr-als-der-veggie-day-nachhaltigkeit-in-den-mensen-des-studierendenwerk-westbrandenburg"
+   }
+  ]
+ },
+ {
+  "id": "wuerzburg",
+  "name": "Studierendenwerk Würzburg",
+  "short": "Würzburg",
+  "state": "BY",
+  "seat": "Würzburg",
+  "lat": 49.782,
+  "lon": 9.971,
+  "students": 50537,
+  "cities": [
+   "Aschaffenburg",
+   "Bamberg",
+   "Schweinfurt",
+   "Würzburg"
+  ],
+  "website": "https://www.swerk-wue.de",
+  "universities": [],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Dominik Kampf",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [
+   {
+    "date": "2025-11-13",
+    "text": "The University of Würzburg's student parliament resolved that the Mensateria Hubland Nord should serve only vegan and vegetarian food once it reopens, and asked for a fully vegan canteen to be examined if that goes well.",
+    "source": "https://www.uni-wuerzburg.de/fileadmin/99122200/2026/2025-11-13_A4-funktion-der-mensateria.pdf"
+   }
+  ]
+ },
+ {
+  "id": "wuppertal",
+  "name": "Studierendenwerk Wuppertal",
+  "short": "Wuppertal",
+  "state": "NW",
+  "seat": "Wuppertal",
+  "lat": 51.245,
+  "lon": 7.149,
+  "students": 21207,
+  "cities": [
+   "Wuppertal"
+  ],
+  "website": "https://www.hochschul-sozialwerk-wuppertal.de",
+  "universities": [
+   "Bergische Universität Wuppertal",
+   "Hochschule für Musik und Tanz Köln, Wuppertal site"
+  ],
+  "people": [
+   {
+    "role": "Managing director",
+    "name": "Ursula Dumsch",
+    "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf",
+    "as_of": "2025-09"
+   }
+  ],
+  "milestones": [],
+  "universities_source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe%20Downloads/Leistungsbilanz%202023%20der%20Studierendenwerke%20NRW.pdf"
+ }
+]

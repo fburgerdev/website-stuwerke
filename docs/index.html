@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant-based Mensa Tracker</title>
+<meta name="description" content="How plant-based are Germany's university canteens? A self-updating map of all 57 Studierendenwerke, built on open menu data.">
+<link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23efe8da'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%232f8f57'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top">Plant-based Mensa Tracker</a>
+  <nav aria-label="Sections">
+    <a href="#states">States</a>
+    <a href="#all">All 57</a>
+    <a href="#networks">Networks</a>
+    <a href="#method">Method</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span id="hero-num" class="num">–</span> of the main dishes in Germany's university canteens are vegan.</h1>
+      <p id="hero-sub" class="lede"></p>
+      <figure class="trend">
+        <figcaption>Vegan share of main dishes on offer, by month</figcaption>
+        <div id="nat-chart" class="chart"></div>
+      </figure>
+    </div>
+    <div class="hero-map">
+      <div id="map" class="map" aria-label="Map of Germany's 57 Studierendenwerke"></div>
+      <div class="legend" aria-hidden="true">
+        <div class="legend-row">
+          <span class="legend-title">Vegan share</span>
+          <span class="swatches" id="swatches"></span>
+        </div>
+        <div class="legend-row">
+          <span class="key"><i class="dot dot-partial"></i>many dishes unlabelled</span>
+          <span class="key"><i class="dot dot-none"></i>no open menu data</span>
+          <span class="key"><i class="dot dot-size"></i>size = students</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="states" class="block">
+    <h2>By federal state</h2>
+    <p class="intro">Each state's share is the average of its Studierendenwerke, weighted by how many students each one serves.</p>
+    <div class="table-wrap"><table id="state-table" class="data"></table></div>
+  </section>
+
+  <section id="all" class="block">
+    <div class="block-head">
+      <h2>All 57 Studierendenwerke</h2>
+      <div class="sort" role="group" aria-label="Sort by">
+        <span>Sort by</span>
+        <button data-sort="change" aria-pressed="true">Change in a year</button>
+        <button data-sort="vegan" aria-pressed="false">Vegan share</button>
+        <button data-sort="students" aria-pressed="false">Students</button>
+        <button data-sort="name" aria-pressed="false">Name</button>
+      </div>
+    </div>
+    <div class="table-wrap"><table id="sw-table" class="data"></table></div>
+  </section>
+
+  <section id="networks" class="block">
+    <h2>Networks</h2>
+    <p class="intro">The Studierendenwerke coordinate through umbrella bodies. These are the ones this site knows of so far.</p>
+    <ul id="umbrella" class="cards"></ul>
+  </section>
+
+  <section id="method" class="block prose">
+    <h2>Method</h2>
+    <p><strong>Where the numbers come from.</strong> Menus are read every day from <a href="https://openmensa.org">OpenMensa</a>, a volunteer-run open database of canteen menus. Student numbers, cities and managing directors come from the Deutsches Studierendenwerk's yearly statistics (<a href="https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf">Zahlenspiegel 2024/2025</a>).</p>
+    <p><strong>What counts.</strong> Only main dishes are counted. Sides, desserts, salad bars and anything under €1.30 for students are left out. A dish counts as vegan or vegetarian when the canteen labels it that way, in its notes, its category or its name. Shares are over the last four weeks.</p>
+    <p><strong>What this does not show.</strong> These are dishes <em>offered</em>, not dishes <em>sold</em>. A canteen with many vegan options can still sell mostly meat. Labels are the canteens' own and sometimes wrong or missing, so every figure is an estimate.</p>
+    <p><strong>Missing data.</strong> <span id="method-missing"></span> A hollow circle means no open menu data, not that nothing is happening there. Where a canteen labels few of its dishes, the vegan share is a lower bound and the circle is shown faded.</p>
+    <p><strong>Averages.</strong> State and national figures weight each Studierendenwerk by its student numbers, so a large one counts for more than a small one. Only Studierendenwerke with well-labelled menus enter the averages; the faded ones are shown but left out, because a lower bound would pull the average down.</p>
+    <p><strong>People.</strong> Names appear only where the organisation or its association publishes them, with the source linked. This site makes no judgement about individuals.</p>
+    <p><strong>Corrections.</strong> Something wrong or missing? <a href="https://github.com/fburgerdev/website-stuwerke/issues/new">Report it here</a>. Code and data are <a href="https://github.com/fburgerdev/website-stuwerke">open</a>.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p id="updated"></p>
+  <p>Menu data: OpenMensa contributors. Map outlines: deutschlandGeoJSON, public domain. <a href="imprint.html">Impressum &amp; Datenschutz</a></p>
+</footer>
+
+<div id="tip" class="tip" role="status" hidden></div>
+<div id="scrim" class="scrim" hidden></div>
+<aside id="drawer" class="drawer" aria-hidden="true" aria-label="Details" tabindex="-1"></aside>
+
+<script src="app.js" defer></script>
+</body>
+</html>

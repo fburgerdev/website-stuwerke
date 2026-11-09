@@ -1,0 +1,4 @@
+[
+ {"id":"dsw","name":"Deutsches Studierendenwerk (DSW)","scope":"Germany","states":[],"what":"National association of all 57 Studierendenwerke. Represents them politically and publishes the yearly statistics this site uses for student numbers.","website":"https://www.studierendenwerke.de","source":"https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf"},
+ {"id":"arge-nrw","name":"Arbeitsgemeinschaft Studierendenwerke NRW","scope":"North Rhine-Westphalia","states":["NW"],"what":"Working group of the twelve Studierendenwerke in North Rhine-Westphalia. Publishes a joint yearly performance report.","website":"https://www.studierendenwerke-nrw.de","source":"https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe Downloads/Leistungsbilanz 2023 der Studierendenwerke NRW.pdf"}
+]
