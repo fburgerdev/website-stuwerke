@@ -168,6 +168,9 @@ table.data { width: 100%; border-collapse: collapse; font-size: 15.5px; font-var
   .hero { grid-template-columns: 1fr; }
   .hero-map { order: -1; max-width: 520px; }
   .top nav a:nth-child(3) { display: none; }
+  .top nav a { white-space: nowrap; }
+  .top { align-items: center; }
+  .brand { font-size: 15.5px; line-height: 1.2; }
   .data td.barcell { min-width: 120px; }
   .hide-s { display: none; }
 }

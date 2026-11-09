@@ -85,8 +85,12 @@
       svg("text", { class: "axis", x: m.l - 6, y: Y(g) + 4, "text-anchor": "end" }, s).textContent = (g * 100).toFixed(0);
     }
     const years = [...new Set(series.map((p) => p[0].slice(0, 4)))];
-    years.forEach((y) => {
+    let lastX = -99;
+    years.forEach((y, i) => {
       const first = series.find((p) => p[0].startsWith(y));
+      const nextX = i + 1 < years.length ? X(series.find((p) => p[0].startsWith(years[i + 1]))[0]) : 1e9;
+      if (nextX - X(first[0]) < 34 || X(first[0]) - lastX < 34) return; // skip a stub year at the start
+      lastX = X(first[0]);
       svg("text", { class: "axis", x: X(first[0]), y: h - 4 }, s).textContent = y;
     });
     const d = series.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1)).join("");
