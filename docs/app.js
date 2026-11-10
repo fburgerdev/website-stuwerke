@@ -100,7 +100,8 @@
   data.highlights.forEach((h, i) => {
     const g = svg("g", { class: "hl", tabindex: 0, role: "button", "aria-label": `Highlight: ${h.title}` }, gMarks);
     g.style.setProperty("--i", i);
-    svg("rect", { x: h.x - 5, y: h.y - 5, width: 10, height: 10, rx: 1.5, transform: `rotate(45 ${h.x} ${h.y})` }, g);
+    svg("circle", { cx: h.x, cy: h.y, r: 10.5, class: "halo" }, g);
+    svg("rect", { x: h.x - 5.5, y: h.y - 5.5, width: 11, height: 11, rx: 1.5, transform: `rotate(45 ${h.x} ${h.y})` }, g);
     const html = `<b>${esc(h.title)}</b><span>${esc(byId[h.sw].short)}</span><span>${esc(h.text)}</span>`;
     g.addEventListener("pointermove", (ev) => showTip(html, ev.clientX, ev.clientY));
     g.addEventListener("pointerleave", hideTip);
@@ -202,25 +203,48 @@
   const swRow = (s) => `<li><button type="button" data-sw="${s.id}"><span class="nm">${esc(s.short)}<small>${num(s.students)} students</small></span>${s.now ? bar(s.now) : '<span class="nodata">no data yet</span>'}<span class="val">${share(s)}</span></button></li>`;
   const cname = (c) => c.name.replace(/^[^,]+, /, "");
 
-  function canteenMap(cs) {
-    let pts = cs.filter((c) => c.pos);
-    if (pts.length < 2) return "";
+  /* Canteen map: dots first; the street map behind them loads from openstreetmap.org only after a click. */
+  let streetOK = false;
+  const merc = (lat, lon, z) => { const n = 256 * 2 ** z, r = lat * Math.PI / 180; return [(lon + 180) / 360 * n, (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * n]; };
+  function mapPoints(cs) {
+    const pts = cs.map((c, i) => ({ c, i })).filter((p) => p.c.pos);
+    if (!pts.length) return pts;
     // drop the odd canteen with a wrong position in the source data (far from all the others)
     const med = (a) => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
-    const mlat = med(pts.map((c) => c.pos[0])), mlon = med(pts.map((c) => c.pos[1]));
-    pts = pts.filter((c) => Math.abs(c.pos[0] - mlat) < 1.2 && Math.abs(c.pos[1] - mlon) < 1.8);
-    if (pts.length < 2) return "";
-    const lat = pts.map((c) => c.pos[0]), lon = pts.map((c) => c.pos[1]);
-    const lat0 = Math.min(...lat), lon0 = Math.min(...lon);
-    const k = Math.cos((lat0 + Math.max(...lat)) / 2 * Math.PI / 180);
-    const w = 440, h = 190, pad = 22;
-    const dx = Math.max(1e-4, (Math.max(...lon) - lon0) * k), dy = Math.max(1e-4, Math.max(...lat) - lat0);
-    const sc = Math.min((w - 2 * pad) / dx, (h - 2 * pad) / dy);
-    const ox = (w - dx * sc) / 2, oy = (h - dy * sc) / 2;
-    const km = Math.max(dx, dy) * 111;
-    return `<h3>Where the canteens are</h3><div class="cmap"><svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Schematic map of the canteens">` +
-      pts.map((c) => `<circle class="cdot" data-i="${cs.indexOf(c)}" cx="${(ox + (c.pos[1] - lon0) * k * sc).toFixed(1)}" cy="${(h - oy - (c.pos[0] - lat0) * sc).toFixed(1)}" r="7" fill="${colour(c.vegan)}"></circle>`).join("") +
-      `</svg><p>Positions only, no street map. The frame spans about ${km < 10 ? km.toFixed(1) : km.toFixed(0)} km.</p></div>`;
+    const mlat = med(pts.map((p) => p.c.pos[0])), mlon = med(pts.map((p) => p.c.pos[1]));
+    return pts.filter((p) => Math.abs(p.c.pos[0] - mlat) < 1.2 && Math.abs(p.c.pos[1] - mlon) < 1.8);
+  }
+  const canteenMap = (cs) => (mapPoints(cs).length ? `<h3>Where the canteens are</h3><div class="cmap" id="cmap"></div>` : "");
+  function drawCanteenMap(el, cs) {
+    if (!el) return;
+    const pts = mapPoints(cs), W = 440, H = 240, pad = 30;
+    const lat = pts.map((p) => p.c.pos[0]), lon = pts.map((p) => p.c.pos[1]);
+    const n = Math.max(...lat), so = Math.min(...lat), w = Math.min(...lon), e = Math.max(...lon);
+    let z = 16;
+    for (; z > 5; z--) { const a = merc(n, w, z), b = merc(so, e, z); if (b[0] - a[0] <= W - 2 * pad && b[1] - a[1] <= H - 2 * pad) break; }
+    const a = merc(n, w, z), b = merc(so, e, z), x0 = (a[0] + b[0]) / 2 - W / 2, y0 = (a[1] + b[1]) / 2 - H / 2;
+    let tiles = "";
+    if (streetOK) {
+      for (let tx = Math.floor(x0 / 256); tx <= Math.floor((x0 + W) / 256); tx++) {
+        for (let ty = Math.floor(y0 / 256); ty <= Math.floor((y0 + H) / 256); ty++) {
+          tiles += `<image href="https://tile.openstreetmap.org/${z}/${tx}/${ty}.png" x="${(tx * 256 - x0).toFixed(1)}" y="${(ty * 256 - y0).toFixed(1)}" width="256.5" height="256.5"></image>`;
+        }
+      }
+    }
+    const km = Math.max((e - w) * Math.cos(n * Math.PI / 180), n - so) * 111;
+    el.classList.toggle("street", streetOK);
+    el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Map of the canteens">${tiles}` +
+      pts.map((p) => { const m = merc(p.c.pos[0], p.c.pos[1], z); return `<circle class="cdot" data-i="${p.i}" cx="${(m[0] - x0).toFixed(1)}" cy="${(m[1] - y0).toFixed(1)}" r="7" fill="${colour(p.c.vegan)}"></circle>`; }).join("") +
+      `</svg>` + (streetOK
+        ? `<p>Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a></p>`
+        : `<p><button class="link" type="button" id="street">Show street map</button> · loads map tiles from openstreetmap.org${pts.length > 1 ? `. The dots span about ${km < 10 ? km.toFixed(1) : km.toFixed(0)} km.` : ""}</p>`);
+    $$(".cdot", el).forEach((c) => {
+      const cn = cs[+c.dataset.i];
+      c.addEventListener("pointermove", (ev) => showTip(`<b>${esc(cname(cn))}</b><span>${esc(cn.city || "")}</span><span class="big">${pct(cn.vegan)} plant-based</span>`, ev.clientX, ev.clientY));
+      c.addEventListener("pointerleave", hideTip);
+    });
+    const btn = $("#street", el);
+    if (btn) btn.addEventListener("click", () => { streetOK = true; drawCanteenMap(el, cs); });
   }
 
   function openSW(id) {
@@ -237,7 +261,8 @@
         : `<p class="note">${s.has_feed ? "This Studierendenwerk's menus do not label plant-based dishes separately, so no share can be calculated." : "No menu data yet. Its menus are not in OpenMensa, and no reader for its own website exists so far."}</p>`) +
       hls.map((h) => `<div class="hlbox"><i class="mark"></i><div><b>${esc(h.title)}</b><p>${esc(h.text)}${h.source ? ` <a href="${esc(h.source)}" rel="noopener">Source</a>` : ""}</p></div></div>`).join("") +
       `<div class="facts"><div><b>${num(s.students)}</b><span>students, winter 2024/25</span></div>` +
-      (s.price ? `<div><b>€${s.price.vegan.toFixed(2)} / €${s.price.meat.toFixed(2)}</b><span>typical student price, plant-based / meat or fish</span></div>` : "") + `</div>` +
+      (s.price ? `<div><b>€${s.price.vegan.toFixed(2)} / €${s.price.meat.toFixed(2)}</b><span>typical student price, plant-based / meat or fish</span></div>` : "") +
+      (s.peta ? `<div><b>${s.peta.points} / 100</b><span><a href="${esc(s.peta.source)}" rel="noopener">PETA canteen ranking ${s.peta.year}</a>, ${esc(s.peta.canteen)}${s.peta.more ? ` (best of ${s.peta.more + 1} rated)` : ""}</span></div>` : "") + `</div>` +
       (now ? canteenMap(s.canteens) : "") +
       (now && s.canteens.length ? `<h3>Canteens, last four weeks</h3><ul class="rows">${s.canteens.map((c) =>
         `<li><span>${esc(cname(c))}${c.pos ? ` <a class="osm" href="https://www.openstreetmap.org/?mlat=${c.pos[0]}&mlon=${c.pos[1]}#map=17/${c.pos[0]}/${c.pos[1]}" rel="noopener" title="Open in OpenStreetMap">map</a>` : ""}</span>${bar({ vegan: c.vegan, vegetarian: c.vegetarian, meat: 0, unlabelled: 0 })}<span>${pct(c.vegan)}</span></li>`).join("")}</ul>` : "") +
@@ -248,11 +273,7 @@
       `<h3>Website and data</h3><p><a href="${esc(s.website)}" rel="noopener">${esc(host(s.website))}</a></p>` +
       (s.source ? `<p class="empty">Menus read from ${s.source === "website" ? "the Studierendenwerk's own website" : "OpenMensa"}${s.published_until ? `, published up to ${esc(s.published_until)}` : ""}.</p>` : "");
     show(html, "#sw-" + id);
-    $$(".cdot", drawer).forEach((c) => {
-      const cn = s.canteens[+c.dataset.i];
-      c.addEventListener("pointermove", (ev) => showTip(`<b>${esc(cname(cn))}</b><span>${esc(cn.city || "")}</span><span class="big">${pct(cn.vegan)} plant-based</span>`, ev.clientX, ev.clientY));
-      c.addEventListener("pointerleave", hideTip);
-    });
+    drawCanteenMap($("#cmap", drawer), s.canteens);
   }
 
   function openState(code) {

@@ -1,7 +1,7 @@
 name: Update data
 on:
   schedule:
-    - cron: "17 3 * * *"   # daily, 03:17 UTC
+    - cron: "17 3 * * *"   # daily, 03:17 UTC; each website reader decides itself whether it is due
   workflow_dispatch:
 permissions:
   contents: write
@@ -9,6 +9,7 @@ concurrency: update
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

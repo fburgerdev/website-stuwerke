@@ -1,0 +1,455 @@
+{
+"bonn:1": [
+50.77839,
+7.18376
+],
+"bonn:2": [
+50.72716,
+7.08325
+],
+"bonn:21": null,
+"bonn:22": [
+50.61822,
+6.9548
+],
+"bonn:3": [
+50.73271,
+7.10756
+],
+"bonn:6": [
+50.70087,
+7.10671
+],
+"bonn:8": null,
+"bremen:300": null,
+"bremen:3001": [
+53.10834,
+8.85102
+],
+"bremen:305": null,
+"bremen:310": [
+53.07287,
+8.79308
+],
+"bremen:320": [
+53.53996,
+8.58365
+],
+"bremen:330": [
+53.05503,
+8.78356
+],
+"bremen:340": [
+53.10737,
+8.85398
+],
+"bremen:350": [
+53.10378,
+8.85068
+],
+"bremen:370": [
+53.06969,
+8.80651
+],
+"bremen:380": [
+53.07691,
+8.80844
+],
+"chemnitz-zwickau:1479835489": null,
+"chemnitz-zwickau:3": null,
+"chemnitz-zwickau:4": null,
+"chemnitz-zwickau:773823070": [
+50.83855,
+12.92837
+],
+"chemnitz-zwickau:9": [
+50.82203,
+12.55823
+],
+"dortmund:341": null,
+"dortmund:342": [
+51.4839,
+7.41445
+],
+"dortmund:451": [
+51.49272,
+7.41483
+],
+"dortmund:452": [
+51.48379,
+7.41446
+],
+"dortmund:453": null,
+"dortmund:455": [
+51.50614,
+7.45744
+],
+"dortmund:456": [
+51.49433,
+7.42068
+],
+"dortmund:470": null,
+"dortmund:472": null,
+"dortmund:474": [
+51.49353,
+7.41638
+],
+"dortmund:480": [
+51.36181,
+8.29598
+],
+"dortmund:482": [
+51.56099,
+8.11466
+],
+"duesseldorf:essenausgabe-sued-duesseldorf": null,
+"duesseldorf:kunstakademie-duesseldorf": [
+51.23055,
+6.77426
+],
+"duesseldorf:mensa-campus-derendorf": [
+51.2476,
+6.79271
+],
+"duesseldorf:mensa-frankenring-krefeld": null,
+"duesseldorf:mensa-kamp-lintfort": null,
+"duesseldorf:mensa-obergath-krefeld": [
+51.31619,
+6.57022
+],
+"duesseldorf:mensa-rheydter-strasse-moenchengladbach": null,
+"duesseldorf:mensa-sommerdeich-kleve": [
+51.7965,
+6.14416
+],
+"duesseldorf:mensa-universitaetsstrasse-duesseldorf": [
+51.19166,
+6.79351
+],
+"duesseldorf:musikhochschule-duesseldorf": null,
+"duesseldorf:restaurant-bar-campus-vita-duesseldorf": [
+51.1923,
+6.79354
+],
+"essen-duisburg:bistro-campus-zollverein": null,
+"essen-duisburg:cafelyse-campus-klinikum": null,
+"essen-duisburg:kaffeebar-insgruene-campus-duisburg": null,
+"essen-duisburg:mensa-campus-bottrop": null,
+"essen-duisburg:mensa-campus-duisburg": null,
+"essen-duisburg:mensa-campus-essen": null,
+"essen-duisburg:mensa-campus-folkwang": null,
+"essen-duisburg:mensa-campus-muelheim": null,
+"giessen:114": [
+50.58707,
+8.68364
+],
+"giessen:115": [
+50.57104,
+8.67168
+],
+"giessen:118": [
+50.58058,
+8.69368
+],
+"giessen:120": [
+50.57407,
+8.69858
+],
+"giessen:121": null,
+"giessen:13": [
+50.577,
+8.69001
+],
+"giessen:15": null,
+"giessen:211": null,
+"giessen:2980": null,
+"giessen:34": [
+50.56557,
+9.68683
+],
+"giessen:38": [
+50.57623,
+8.66959
+],
+"goettingen:bistro-hawk": [
+51.52192,
+9.96994
+],
+"goettingen:cgin": [
+51.55837,
+9.95099
+],
+"goettingen:mensa-am-turm": [
+51.54168,
+9.93865
+],
+"goettingen:zentralmensa": [
+51.54192,
+9.93461
+],
+"halle:harzmensa": [
+51.48967,
+11.96764
+],
+"halle:heidemensa": [
+51.49656,
+11.93395
+],
+"halle:mensa-bernburg": [
+51.82405,
+11.70984
+],
+"halle:mensa-burg": [
+51.50286,
+11.95503
+],
+"halle:mensa-dessau": [
+51.84093,
+12.23042
+],
+"halle:mensa-franckesche-stiftungen": [
+51.47796,
+11.97135
+],
+"halle:mensa-köthen": null,
+"halle:mensa-lohmannstraße": null,
+"halle:mensa-merseburg": [
+51.34357,
+11.97034
+],
+"halle:mensa-neuwerk": [
+51.49084,
+11.9574
+],
+"halle:mensa-tulpe": null,
+"halle:weinbergmensa": [
+51.49869,
+11.94348
+],
+"koblenz:hochschule-rac-remagen": null,
+"koblenz:hsrmc-koblenz": null,
+"koblenz:universitaet-koblenz": null,
+"magdeburg:halberstadt": null,
+"magdeburg:magdeburg_herrenkrug": [
+52.14017,
+11.67571
+],
+"magdeburg:magdeburg_kellercafe": [
+52.13808,
+11.6339
+],
+"magdeburg:magdeburg_unicampus_o": null,
+"magdeburg:magdeburg_unicampus_u": null,
+"magdeburg:stendal": [
+52.61516,
+11.84924
+],
+"magdeburg:wernigerode": null,
+"oberfranken:amberg": [
+49.44483,
+11.8471
+],
+"oberfranken:campus-design-coburg": [
+50.25402,
+10.95733
+],
+"oberfranken:gsp-bayreuth": [
+49.94819,
+11.55074
+],
+"oberfranken:hauptmensa-bayreuth": [
+49.93034,
+11.58551
+],
+"oberfranken:hauptmensa-coburg": null,
+"oberfranken:hof": [
+50.32475,
+11.93618
+],
+"oberfranken:kronach": [
+50.24089,
+11.32128
+],
+"oberfranken:kulmbach": [
+50.09024,
+11.45907
+],
+"oberfranken:medizin-campus": null,
+"oberfranken:muenchberg": null,
+"oberfranken:nuernberger-strasse": [
+49.93142,
+11.59516
+],
+"oberfranken:weiden": [
+48.83017,
+12.95417
+],
+"oldenburg:elsfleth": [
+53.24501,
+8.46843
+],
+"oldenburg:emden": [
+53.37599,
+7.20451
+],
+"oldenburg:ofener_str": [
+53.14237,
+8.20146
+],
+"oldenburg:uh": [
+53.14751,
+8.17824
+],
+"oldenburg:wechloy": [
+53.15213,
+8.16523
+],
+"oldenburg:whv": [
+53.54704,
+8.09013
+],
+"osnabrueck:1": null,
+"osnabrueck:3": [
+52.30471,
+8.04004
+],
+"osnabrueck:4": [
+52.72028,
+8.29536
+],
+"osnabrueck:5": null,
+"osnabrueck:7": [
+52.2704,
+8.04561
+],
+"osnabrueck:9": [
+52.51985,
+7.32389
+],
+"ost-brandenburg:2": null,
+"ost-brandenburg:3": null,
+"ost-brandenburg:4": [
+52.82489,
+13.81025
+],
+"ost-brandenburg:5": null,
+"ost-brandenburg:6": [
+51.72616,
+14.31908
+],
+"ost-brandenburg:7": [
+51.52258,
+13.98735
+],
+"ostniedersachsen:102": null,
+"ostniedersachsen:105": null,
+"ostniedersachsen:109": null,
+"ostniedersachsen:112": null,
+"ostniedersachsen:120": [
+52.25719,
+10.50136
+],
+"ostniedersachsen:130": [
+52.15736,
+10.52499
+],
+"ostniedersachsen:134": [
+52.89789,
+10.44471
+],
+"ostniedersachsen:140": [
+53.22927,
+10.39823
+],
+"ostniedersachsen:150": [
+52.13491,
+9.97412
+],
+"ostniedersachsen:153": null,
+"ostniedersachsen:160": null,
+"ostniedersachsen:163": null,
+"ostniedersachsen:171": [
+51.80181,
+10.34282
+],
+"ostniedersachsen:193": [
+52.13491,
+9.97412
+],
+"ostniedersachsen:200": [
+52.08673,
+10.37948
+],
+"paderborn:mensa": [
+51.70855,
+8.77152
+],
+"paderborn:mensa-forum": [
+51.72095,
+8.7591
+],
+"paderborn:mensa-hamm": [
+51.68199,
+7.84134
+],
+"paderborn:mensa-lippstadt": [
+51.67318,
+8.36234
+],
+"paderborn:mensa-zm2": [
+51.73029,
+8.73975
+],
+"rostock-wismar:Mensa Kantilene (hmt)": [
+54.09148,
+12.1447
+],
+"rostock-wismar:Mensa Multiple Choice": [
+54.08513,
+12.09861
+],
+"rostock-wismar:Mensa St.-Georg- Straße": [
+54.08197,
+12.13832
+],
+"rostock-wismar:Mensa Süd": null,
+"rostock-wismar:Mensa Ulme": [
+54.08791,
+12.10818
+],
+"rostock-wismar:Mensa Wismar": [
+53.8915,
+11.44663
+],
+"rostock-wismar:Ulmen – Lounge": null,
+"vorderpfalz:311": null,
+"vorderpfalz:320": [
+49.2154,
+8.37109
+],
+"vorderpfalz:330": [
+49.63364,
+8.34374
+],
+"vorderpfalz:340": null,
+"vorderpfalz:landau": [
+49.2045,
+8.10862
+],
+"wuppertal:bergische_univ": [
+51.26542,
+7.14206
+],
+"wuppertal:bihasp": null,
+"wuppertal:cafgebme": [
+51.24646,
+7.14685
+],
+"wuppertal:ccfme": null,
+"wuppertal:kngebme": [
+51.24629,
+7.14741
+],
+"wuppertal:mhs": null,
+"wuppertal:sport_design": null
+}

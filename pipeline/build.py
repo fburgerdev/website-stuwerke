@@ -77,6 +77,7 @@ def main():
     umbrella = json.load(open(D("data", "umbrella.json")))
     highlights = json.load(open(D("data", "highlights.json")))
     sources = json.load(open(D("data", "sources.json"))) if os.path.exists(D("data", "sources.json")) else {}
+    peta = json.load(open(D("data", "peta.json"))) if os.path.exists(D("data", "peta.json")) else {"entries": []}
     paths, box = build_map()
 
     today = dt.date.today()
@@ -88,6 +89,11 @@ def main():
     by_sw = {}
     for cid, info in canteens.items():
         by_sw.setdefault(info["sw"], []).append(cid)
+    # where a website reader delivers data, it replaces that Studierendenwerk's OpenMensa canteens (same kitchens, read twice)
+    for sw, cids in by_sw.items():
+        own = [c for c in cids if canteens[c].get("source") == "website" and any(weekly.get(c, {}).get(w) for w in window)]
+        if own:
+            by_sw[sw] = own
 
     def agg(cids, weeks):
         tot = {}
@@ -114,6 +120,9 @@ def main():
         rec["has_feed"] = bool(cur)
         rec["source"] = "website" if any(canteens[c].get("source") == "website" for c in cids) else "openmensa" if cids else None
         rec["published_until"] = (sources.get(s["id"]) or {}).get("published_until")
+        rated = sorted((e for e in peta["entries"] if e["sw"] == s["id"]), key=lambda e: -e["points"])
+        if rated:
+            rec["peta"] = {"year": peta["year"], "source": peta["source"], "points": rated[0]["points"], "canteen": rated[0]["canteen"], "more": len(rated) - 1}
         if q != "none":
             rec["now"] = cur
             prev = shares(agg(cids, year_ago))

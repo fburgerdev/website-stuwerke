@@ -3976,6 +3976,734 @@
 "source": "website",
 "sw": "bodensee"
 },
+"bonn:1": {
+"city": "Sankt Augustin",
+"name": "Mensa Sankt Augustin",
+"pos": [
+50.77839,
+7.18376
+],
+"source": "website",
+"sw": "bonn"
+},
+"bonn:2": {
+"city": "Bonn",
+"name": "Mensa CAMPO",
+"pos": [
+50.72716,
+7.08325
+],
+"source": "website",
+"sw": "bonn"
+},
+"bonn:21": {
+"city": "Bonn",
+"name": "Mensa Rabinstraße",
+"pos": null,
+"source": "website",
+"sw": "bonn"
+},
+"bonn:22": {
+"city": "Rheinbach",
+"name": "Mensa Rheinbach",
+"pos": [
+50.61822,
+6.9548
+],
+"source": "website",
+"sw": "bonn"
+},
+"bonn:3": {
+"city": "Bonn",
+"name": "Mensa am Hofgarten",
+"pos": [
+50.73271,
+7.10756
+],
+"source": "website",
+"sw": "bonn"
+},
+"bonn:6": {
+"city": "Bonn",
+"name": "Venusberg Bistro",
+"pos": [
+50.70087,
+7.10671
+],
+"source": "website",
+"sw": "bonn"
+},
+"bonn:8": {
+"city": "Bonn",
+"name": "Casino ZEF/ZEI",
+"pos": null,
+"source": "website",
+"sw": "bonn"
+},
+"bremen:300": {
+"city": "Bremen",
+"name": "Uni-Mensa",
+"pos": null,
+"source": "website",
+"sw": "bremen"
+},
+"bremen:3001": {
+"city": "Bremen",
+"name": "Café Central",
+"pos": [
+53.10834,
+8.85102
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:305": {
+"city": "Bremen",
+"name": "Interimsmensa HfK",
+"pos": null,
+"source": "website",
+"sw": "bremen"
+},
+"bremen:310": {
+"city": "Bremen",
+"name": "Mensa Neustadtswall",
+"pos": [
+53.07287,
+8.79308
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:320": {
+"city": "Bremerhaven",
+"name": "Mensa Bremerhaven",
+"pos": [
+53.53996,
+8.58365
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:330": {
+"city": "Bremen",
+"name": "Mensa Airport",
+"pos": [
+53.05503,
+8.78356
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:340": {
+"city": "Bremen",
+"name": "Cafeteria GW2",
+"pos": [
+53.10737,
+8.85398
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:350": {
+"city": "Bremen",
+"name": "Mensa NW1",
+"pos": [
+53.10378,
+8.85068
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:370": {
+"city": "Bremen",
+"name": "Mensa Werderstraße",
+"pos": [
+53.06969,
+8.80651
+],
+"source": "website",
+"sw": "bremen"
+},
+"bremen:380": {
+"city": "Bremen",
+"name": "Mensa Domshof",
+"pos": [
+53.07691,
+8.80844
+],
+"source": "website",
+"sw": "bremen"
+},
+"chemnitz-zwickau:1479835489": {
+"city": "Chemnitz",
+"name": "Mensa Reichenhainer Straße",
+"pos": null,
+"source": "website",
+"sw": "chemnitz-zwickau"
+},
+"chemnitz-zwickau:3": {
+"city": "Zwickau",
+"name": "Mensa Scheffelberg",
+"pos": null,
+"source": "website",
+"sw": "chemnitz-zwickau"
+},
+"chemnitz-zwickau:4": {
+"city": "Zwickau",
+"name": "Mensa am Ring",
+"pos": null,
+"source": "website",
+"sw": "chemnitz-zwickau"
+},
+"chemnitz-zwickau:773823070": {
+"city": "Chemnitz",
+"name": "Mensa Straße der Nationen",
+"pos": [
+50.83855,
+12.92837
+],
+"source": "website",
+"sw": "chemnitz-zwickau"
+},
+"chemnitz-zwickau:9": {
+"city": "Glauchau",
+"name": "Mensa Glauchau",
+"pos": [
+50.82203,
+12.55823
+],
+"source": "website",
+"sw": "chemnitz-zwickau"
+},
+"dortmund:341": {
+"city": "Dortmund",
+"name": "Hauptmensa",
+"pos": null,
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:342": {
+"city": "Dortmund",
+"name": "Mensa Süd",
+"pos": [
+51.4839,
+7.41445
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:451": {
+"city": "Dortmund",
+"name": "Galerie",
+"pos": [
+51.49272,
+7.41483
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:452": {
+"city": "Dortmund",
+"name": "Archeteria",
+"pos": [
+51.48379,
+7.41446
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:453": {
+"city": "Dortmund",
+"name": "Mensa Max-Ophüls-Platz",
+"pos": null,
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:455": {
+"city": "Dortmund",
+"name": "Mensa Sonnenstraße",
+"pos": [
+51.50614,
+7.45744
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:456": {
+"city": "Dortmund",
+"name": "kostBar",
+"pos": [
+51.49433,
+7.42068
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:470": {
+"city": "Hagen",
+"name": "Mensa Snack it",
+"pos": null,
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:472": {
+"city": "Iserlohn",
+"name": "Mensa Canape",
+"pos": null,
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:474": {
+"city": "Dortmund",
+"name": "food fakultät",
+"pos": [
+51.49353,
+7.41638
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:480": {
+"city": "Meschede",
+"name": "Mensa da Vinci",
+"pos": [
+51.36181,
+8.29598
+],
+"source": "website",
+"sw": "dortmund"
+},
+"dortmund:482": {
+"city": "Soest",
+"name": "Mensa Soest",
+"pos": [
+51.56099,
+8.11466
+],
+"source": "website",
+"sw": "dortmund"
+},
+"duesseldorf:essenausgabe-sued-duesseldorf": {
+"city": "Düsseldorf",
+"name": "Essen Math.-Nat Fakultät",
+"pos": null,
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:kunstakademie-duesseldorf": {
+"city": "Düsseldorf",
+"name": "Kunstakademie, Düsseldorf",
+"pos": [
+51.23055,
+6.77426
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-campus-derendorf": {
+"city": "Düsseldorf",
+"name": "Mensa Campus Derendorf",
+"pos": [
+51.2476,
+6.79271
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-frankenring-krefeld": {
+"city": "Krefeld",
+"name": "Mensa Frankenring, Krefeld",
+"pos": null,
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-kamp-lintfort": {
+"city": "Kamp-Lintfort",
+"name": "Mensa Fr.-Heinrich-Allee",
+"pos": null,
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-obergath-krefeld": {
+"city": "Krefeld",
+"name": "Mensa Obergath, Krefeld",
+"pos": [
+51.31619,
+6.57022
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-rheydter-strasse-moenchengladbach": {
+"city": "Mönchengladbach",
+"name": "Mensa Rheydter Straße, Mönchengladbach",
+"pos": null,
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-sommerdeich-kleve": {
+"city": "Kleve",
+"name": "Mensa Sommerdeich, Kleve",
+"pos": [
+51.7965,
+6.14416
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:mensa-universitaetsstrasse-duesseldorf": {
+"city": "Düsseldorf",
+"name": "Mensa Universitätsstraße, Düsseldorf",
+"pos": [
+51.19166,
+6.79351
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:musikhochschule-duesseldorf": {
+"city": "Düsseldorf",
+"name": "Musikhochschule, Düsseldorf",
+"pos": null,
+"source": "website",
+"sw": "duesseldorf"
+},
+"duesseldorf:restaurant-bar-campus-vita-duesseldorf": {
+"city": "Düsseldorf",
+"name": "restaurant & bar campus vita, Düsseldorf",
+"pos": [
+51.1923,
+6.79354
+],
+"source": "website",
+"sw": "duesseldorf"
+},
+"essen-duisburg:bistro-campus-zollverein": {
+"city": "Essen",
+"name": "Bistro, Campus Zollverein",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:cafelyse-campus-klinikum": {
+"city": "Essen",
+"name": "Cafélyse, Campus Klinikum",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:kaffeebar-insgruene-campus-duisburg": {
+"city": "Duisburg",
+"name": "Kaffeebar insgrüne, Campus Duisburg",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:mensa-campus-bottrop": {
+"city": "Bottrop",
+"name": "Mensa, Campus Bottrop",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:mensa-campus-duisburg": {
+"city": "Duisburg",
+"name": "Mensa, Campus Duisburg",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:mensa-campus-essen": {
+"city": "Essen",
+"name": "Mensa, Campus Essen",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:mensa-campus-folkwang": {
+"city": "Essen",
+"name": "Mensa, Campus Folkwang",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"essen-duisburg:mensa-campus-muelheim": {
+"city": "Mülheim",
+"name": "Mensa, Campus Mülheim",
+"pos": null,
+"source": "website",
+"sw": "essen-duisburg"
+},
+"giessen:114": {
+"city": "Gießen",
+"name": "Mensa THM Gießen",
+"pos": [
+50.58707,
+8.68364
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:115": {
+"city": "Gießen",
+"name": "Cafeteria CaRé",
+"pos": [
+50.57104,
+8.67168
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:118": {
+"city": "Gießen",
+"name": "Cafeteria JuWi",
+"pos": [
+50.58058,
+8.69368
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:120": {
+"city": "Gießen",
+"name": "Cafeteria Café am Kunstweg",
+"pos": [
+50.57407,
+8.69858
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:121": {
+"city": "Gießen",
+"name": "Cafeteria CampusTor",
+"pos": null,
+"source": "website",
+"sw": "giessen"
+},
+"giessen:13": {
+"city": "Gießen",
+"name": "Mensa Otto-Behaghel-Straße (OBS)",
+"pos": [
+50.577,
+8.69001
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:15": {
+"city": "Friedberg",
+"name": "Mensa THM Friedberg",
+"pos": null,
+"source": "website",
+"sw": "giessen"
+},
+"giessen:211": {
+"city": "Fulda",
+"name": "5 DAYS A WEEK – campus streetfood –",
+"pos": null,
+"source": "website",
+"sw": "giessen"
+},
+"giessen:2980": {
+"city": "Gießen",
+"name": "ImBiss Campus VetMed",
+"pos": null,
+"source": "website",
+"sw": "giessen"
+},
+"giessen:34": {
+"city": "Fulda",
+"name": "Mensa Hochschule Fulda",
+"pos": [
+50.56557,
+9.68683
+],
+"source": "website",
+"sw": "giessen"
+},
+"giessen:38": {
+"city": "Gießen",
+"name": "Mensa Mildred-Harnack-Fish-Haus (MHFH)",
+"pos": [
+50.57623,
+8.66959
+],
+"source": "website",
+"sw": "giessen"
+},
+"goettingen:bistro-hawk": {
+"city": "Göttingen",
+"name": "Bistro HAWK",
+"pos": [
+51.52192,
+9.96994
+],
+"source": "website",
+"sw": "goettingen"
+},
+"goettingen:cgin": {
+"city": "Göttingen",
+"name": "CGiN",
+"pos": [
+51.55837,
+9.95099
+],
+"source": "website",
+"sw": "goettingen"
+},
+"goettingen:mensa-am-turm": {
+"city": "Göttingen",
+"name": "Mensa am Turm",
+"pos": [
+51.54168,
+9.93865
+],
+"source": "website",
+"sw": "goettingen"
+},
+"goettingen:zentralmensa": {
+"city": "Göttingen",
+"name": "Zentralmensa",
+"pos": [
+51.54192,
+9.93461
+],
+"source": "website",
+"sw": "goettingen"
+},
+"halle:harzmensa": {
+"city": "Halle",
+"name": "Harzmensa",
+"pos": [
+51.48967,
+11.96764
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:heidemensa": {
+"city": "Halle",
+"name": "Heidemensa",
+"pos": [
+51.49656,
+11.93395
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-bernburg": {
+"city": "Bernburg",
+"name": "Mensa Bernburg",
+"pos": [
+51.82405,
+11.70984
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-burg": {
+"city": "Halle",
+"name": "Mensa Burg",
+"pos": [
+51.50286,
+11.95503
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-dessau": {
+"city": "Dessau",
+"name": "Mensa Dessau",
+"pos": [
+51.84093,
+12.23042
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-franckesche-stiftungen": {
+"city": "Halle",
+"name": "Mensa Franckesche Stiftungen",
+"pos": [
+51.47796,
+11.97135
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-köthen": {
+"city": "Köthen",
+"name": "Mensa Köthen",
+"pos": null,
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-lohmannstraße": {
+"city": "Halle",
+"name": "Mensa Lohmannstraße",
+"pos": null,
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-merseburg": {
+"city": "Merseburg",
+"name": "Mensa Merseburg",
+"pos": [
+51.34357,
+11.97034
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-neuwerk": {
+"city": "Halle",
+"name": "Mensa Neuwerk",
+"pos": [
+51.49084,
+11.9574
+],
+"source": "website",
+"sw": "halle"
+},
+"halle:mensa-tulpe": {
+"city": "Halle",
+"name": "Mensa Tulpe",
+"pos": null,
+"source": "website",
+"sw": "halle"
+},
+"halle:weinbergmensa": {
+"city": "Halle",
+"name": "Weinbergmensa",
+"pos": [
+51.49869,
+11.94348
+],
+"source": "website",
+"sw": "halle"
+},
+"koblenz:hochschule-rac-remagen": {
+"city": "Remagen",
+"name": "Mensa RheinAhrCampus",
+"pos": null,
+"source": "website",
+"sw": "koblenz"
+},
+"koblenz:hsrmc-koblenz": {
+"city": "Koblenz",
+"name": "Mensa Hochschule Koblenz",
+"pos": null,
+"source": "website",
+"sw": "koblenz"
+},
+"koblenz:universitaet-koblenz": {
+"city": "Koblenz",
+"name": "Mensa Universität Koblenz",
+"pos": null,
+"source": "website",
+"sw": "koblenz"
+},
 "magdeburg:halberstadt": {
 "city": "Halberstadt",
 "name": "Mensa DomCafete",
@@ -3986,14 +4714,20 @@
 "magdeburg:magdeburg_herrenkrug": {
 "city": "Magdeburg",
 "name": "Mensa Herrenkrug",
-"pos": null,
+"pos": [
+52.14017,
+11.67571
+],
 "source": "website",
 "sw": "magdeburg"
 },
 "magdeburg:magdeburg_kellercafe": {
 "city": "Magdeburg",
 "name": "Kellercafé",
-"pos": null,
+"pos": [
+52.13808,
+11.6339
+],
 "source": "website",
 "sw": "magdeburg"
 },
@@ -4014,7 +4748,10 @@
 "magdeburg:stendal": {
 "city": "Stendal",
 "name": "Mensa Stendal",
-"pos": null,
+"pos": [
+52.61516,
+11.84924
+],
 "source": "website",
 "sw": "magdeburg"
 },
@@ -4265,47 +5002,281 @@
 "source": "website",
 "sw": "muenchen"
 },
+"oberfranken:amberg": {
+"city": "Amberg",
+"name": "Mensa Amberg",
+"pos": [
+49.44483,
+11.8471
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:campus-design-coburg": {
+"city": "Coburg",
+"name": "Campus Design Coburg",
+"pos": [
+50.25402,
+10.95733
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:gsp-bayreuth": {
+"city": "Bayreuth",
+"name": "GSP Bayreuth",
+"pos": [
+49.94819,
+11.55074
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:hauptmensa-bayreuth": {
+"city": "Bayreuth",
+"name": "Hauptmensa Bayreuth",
+"pos": [
+49.93034,
+11.58551
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:hauptmensa-coburg": {
+"city": "Coburg",
+"name": "Coburg Mensa",
+"pos": null,
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:hof": {
+"city": "Hof",
+"name": "Mensa Hof",
+"pos": [
+50.32475,
+11.93618
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:kronach": {
+"city": "Kronach",
+"name": "Mensa Kronach",
+"pos": [
+50.24089,
+11.32128
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:kulmbach": {
+"city": "Kulmbach",
+"name": "Mensa Kulmbach",
+"pos": [
+50.09024,
+11.45907
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:medizin-campus": {
+"city": "Bayreuth",
+"name": "Medizin Campus Bayreuth",
+"pos": null,
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:muenchberg": {
+"city": "Münchberg",
+"name": "Mensa Münchberg",
+"pos": null,
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:nuernberger-strasse": {
+"city": "Bayreuth",
+"name": "Nürnberger Straße Bayreuth",
+"pos": [
+49.93142,
+11.59516
+],
+"source": "website",
+"sw": "oberfranken"
+},
+"oberfranken:weiden": {
+"city": "Weiden",
+"name": "Mensa Weiden",
+"pos": [
+48.83017,
+12.95417
+],
+"source": "website",
+"sw": "oberfranken"
+},
 "oldenburg:elsfleth": {
 "city": "Elsfleth",
 "name": "Mensa Elsfleth",
-"pos": null,
+"pos": [
+53.24501,
+8.46843
+],
 "source": "website",
 "sw": "oldenburg"
 },
 "oldenburg:emden": {
 "city": "Emden",
 "name": "Mensa Emden",
-"pos": null,
+"pos": [
+53.37599,
+7.20451
+],
 "source": "website",
 "sw": "oldenburg"
 },
 "oldenburg:ofener_str": {
 "city": "Oldenburg",
 "name": "Mensa Ofener Str.",
-"pos": null,
+"pos": [
+53.14237,
+8.20146
+],
 "source": "website",
 "sw": "oldenburg"
 },
 "oldenburg:uh": {
 "city": "Oldenburg",
 "name": "Mensa Uhlhornsweg",
-"pos": null,
+"pos": [
+53.14751,
+8.17824
+],
 "source": "website",
 "sw": "oldenburg"
 },
 "oldenburg:wechloy": {
 "city": "Oldenburg",
 "name": "Mensa Wechloy",
-"pos": null,
+"pos": [
+53.15213,
+8.16523
+],
 "source": "website",
 "sw": "oldenburg"
 },
 "oldenburg:whv": {
 "city": "Wilhelmshaven",
 "name": "Mensa Wilhelmshaven",
-"pos": null,
+"pos": [
+53.54704,
+8.09013
+],
 "source": "website",
 "sw": "oldenburg"
+},
+"osnabrueck:1": {
+"city": "Osnabrück",
+"name": "Mensa am Westerberg",
+"pos": null,
+"source": "website",
+"sw": "osnabrueck"
+},
+"osnabrueck:3": {
+"city": "Osnabrück",
+"name": "Mensa Haste",
+"pos": [
+52.30471,
+8.04004
+],
+"source": "website",
+"sw": "osnabrueck"
+},
+"osnabrueck:4": {
+"city": "Vechta",
+"name": "Mensa Vechta",
+"pos": [
+52.72028,
+8.29536
+],
+"source": "website",
+"sw": "osnabrueck"
+},
+"osnabrueck:5": {
+"city": "Osnabrück",
+"name": "Bistro Caprivi",
+"pos": null,
+"source": "website",
+"sw": "osnabrueck"
+},
+"osnabrueck:7": {
+"city": "Osnabrück",
+"name": "Mensa Schlossgarten",
+"pos": [
+52.2704,
+8.04561
+],
+"source": "website",
+"sw": "osnabrueck"
+},
+"osnabrueck:9": {
+"city": "Lingen",
+"name": "Mensa Lingen",
+"pos": [
+52.51985,
+7.32389
+],
+"source": "website",
+"sw": "osnabrueck"
+},
+"ost-brandenburg:2": {
+"city": "Frankfurt (Oder)",
+"name": "Mensa Europaplatz",
+"pos": null,
+"source": "website",
+"sw": "ost-brandenburg"
+},
+"ost-brandenburg:3": {
+"city": "Eberswalde",
+"name": "Mensa Stadtcampus",
+"pos": null,
+"source": "website",
+"sw": "ost-brandenburg"
+},
+"ost-brandenburg:4": {
+"city": "Eberswalde",
+"name": "Mensa Waldcampus",
+"pos": [
+52.82489,
+13.81025
+],
+"source": "website",
+"sw": "ost-brandenburg"
+},
+"ost-brandenburg:5": {
+"city": "Cottbus",
+"name": "CAMPUS MENSA",
+"pos": null,
+"source": "website",
+"sw": "ost-brandenburg"
+},
+"ost-brandenburg:6": {
+"city": "Cottbus",
+"name": "Mensa Sachsendorf",
+"pos": [
+51.72616,
+14.31908
+],
+"source": "website",
+"sw": "ost-brandenburg"
+},
+"ost-brandenburg:7": {
+"city": "Senftenberg",
+"name": "Mensa Senftenberg",
+"pos": [
+51.52258,
+13.98735
+],
+"source": "website",
+"sw": "ost-brandenburg"
 },
 "ostniedersachsen:102": {
 "city": "Braunschweig",
@@ -4338,35 +5309,50 @@
 "ostniedersachsen:120": {
 "city": "Braunschweig",
 "name": "Kantina Kreativa Braunschweig",
-"pos": null,
+"pos": [
+52.25719,
+10.50136
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:130": {
 "city": "Wolfenbüttel",
 "name": "Mensa Wolfenbüttel",
-"pos": null,
+"pos": [
+52.15736,
+10.52499
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:134": {
 "city": "Suderburg",
 "name": "Mensa Suderburg",
-"pos": null,
+"pos": [
+52.89789,
+10.44471
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:140": {
 "city": "Lüneburg",
 "name": "Mensa Lüneburg",
-"pos": null,
+"pos": [
+53.22927,
+10.39823
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:150": {
 "city": "Hildesheim",
 "name": "Mensa Uni Hildesheim",
-"pos": null,
+"pos": [
+52.13491,
+9.97412
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
@@ -4394,42 +5380,110 @@
 "ostniedersachsen:171": {
 "city": "Clausthal-Zellerfeld",
 "name": "Mensa Clausthal",
-"pos": null,
+"pos": [
+51.80181,
+10.34282
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:193": {
 "city": "Hildesheim",
 "name": "Mensa Uni Hildesheim",
-"pos": null,
+"pos": [
+52.13491,
+9.97412
+],
 "source": "website",
 "sw": "ostniedersachsen"
 },
 "ostniedersachsen:200": {
 "city": "Salzgitter",
 "name": "Mensa Salzgitter",
-"pos": null,
+"pos": [
+52.08673,
+10.37948
+],
 "source": "website",
 "sw": "ostniedersachsen"
+},
+"paderborn:mensa": {
+"city": "Paderborn",
+"name": "Mensa Academica",
+"pos": [
+51.70855,
+8.77152
+],
+"source": "website",
+"sw": "paderborn"
+},
+"paderborn:mensa-forum": {
+"city": "Paderborn",
+"name": "FORUM",
+"pos": [
+51.72095,
+8.7591
+],
+"source": "website",
+"sw": "paderborn"
+},
+"paderborn:mensa-hamm": {
+"city": "Hamm",
+"name": "Mensa Basilica Hamm",
+"pos": [
+51.68199,
+7.84134
+],
+"source": "website",
+"sw": "paderborn"
+},
+"paderborn:mensa-lippstadt": {
+"city": "Lippstadt",
+"name": "Mensa Atrium Lippstadt",
+"pos": [
+51.67318,
+8.36234
+],
+"source": "website",
+"sw": "paderborn"
+},
+"paderborn:mensa-zm2": {
+"city": "Paderborn",
+"name": "Mensa ZM2 Paderborn",
+"pos": [
+51.73029,
+8.73975
+],
+"source": "website",
+"sw": "paderborn"
 },
 "rostock-wismar:Mensa Kantilene (hmt)": {
 "city": "Rostock",
 "name": "Mensa Kantilene (hmt)",
-"pos": null,
+"pos": [
+54.09148,
+12.1447
+],
 "source": "website",
 "sw": "rostock-wismar"
 },
 "rostock-wismar:Mensa Multiple Choice": {
 "city": "Rostock",
 "name": "Mensa Multiple Choice",
-"pos": null,
+"pos": [
+54.08513,
+12.09861
+],
 "source": "website",
 "sw": "rostock-wismar"
 },
 "rostock-wismar:Mensa St.-Georg- Straße": {
 "city": "Rostock",
 "name": "Mensa St.-Georg- Straße",
-"pos": null,
+"pos": [
+54.08197,
+12.13832
+],
 "source": "website",
 "sw": "rostock-wismar"
 },
@@ -4443,14 +5497,20 @@
 "rostock-wismar:Mensa Ulme": {
 "city": "Rostock",
 "name": "Mensa Ulme",
-"pos": null,
+"pos": [
+54.08791,
+12.10818
+],
 "source": "website",
 "sw": "rostock-wismar"
 },
 "rostock-wismar:Mensa Wismar": {
 "city": "Wismar",
 "name": "Mensa Wismar",
-"pos": null,
+"pos": [
+53.8915,
+11.44663
+],
 "source": "website",
 "sw": "rostock-wismar"
 },
@@ -4461,12 +5521,46 @@
 "source": "website",
 "sw": "rostock-wismar"
 },
+"vorderpfalz:311": {
+"city": "Landau",
+"name": "Mensa Landau Bürgerstraße",
+"pos": null,
+"source": "website",
+"sw": "vorderpfalz"
+},
+"vorderpfalz:320": {
+"city": "Germersheim",
+"name": "Mensa Germersheim",
+"pos": [
+49.2154,
+8.37109
+],
+"source": "website",
+"sw": "vorderpfalz"
+},
+"vorderpfalz:330": {
+"city": "Worms",
+"name": "Mensa Worms",
+"pos": [
+49.63364,
+8.34374
+],
+"source": "website",
+"sw": "vorderpfalz"
+},
+"vorderpfalz:340": {
+"city": "Ludwigshafen",
+"name": "Mensa Ludwigshafen",
+"pos": null,
+"source": "website",
+"sw": "vorderpfalz"
+},
 "vorderpfalz:landau": {
 "city": "Landau",
 "name": "Mensa Landau",
 "pos": [
-49.2042,
-8.1078
+49.2045,
+8.10862
 ],
 "source": "website",
 "sw": "vorderpfalz"
@@ -4474,7 +5568,10 @@
 "wuppertal:bergische_univ": {
 "city": "Wuppertal",
 "name": "Mensa ME 02",
-"pos": null,
+"pos": [
+51.26542,
+7.14206
+],
 "source": "website",
 "sw": "wuppertal"
 },
@@ -4488,7 +5585,10 @@
 "wuppertal:cafgebme": {
 "city": "Wuppertal",
 "name": "C@feteria ME 03",
-"pos": null,
+"pos": [
+51.24646,
+7.14685
+],
 "source": "website",
 "sw": "wuppertal"
 },
@@ -4502,7 +5602,10 @@
 "wuppertal:kngebme": {
 "city": "Wuppertal",
 "name": "Kneipe ME 04",
-"pos": null,
+"pos": [
+51.24629,
+7.14741
+],
 "source": "website",
 "sw": "wuppertal"
 },

@@ -19,6 +19,7 @@ import readers  # noqa: E402
 API = "https://openmensa.org/api/v2"
 WEEKLY = os.path.join(ROOT, "data", "weekly.json")
 CANTEENS = os.path.join(ROOT, "data", "canteens.json")
+DAILY = os.path.join(ROOT, "data", "daily.json")
 UA = {"User-Agent": "plant-based-mensa-tracker (github.com/fburgerdev/website-stuwerke)"}
 
 # Canteens that are not run by a Studierendenwerk (schools, daycare, company canteens, other countries)
@@ -34,9 +35,9 @@ VEGGIE_NOTE = re.compile(r"^vegetarisch\b|^vegetarian\b|men[üu] ist vegetarisch
                          r"ohne fleisch|fleischlos|^veggie?\b|ovo-lacto|^veggi,", re.I)
 MEAT_NOTE = re.compile(r"fleisch|gefl[üu]gel|schwein|\brind|\bfisch|\blamm|\bwild\b|\bkalb|\bpork|\bbeef|chicken|poultry|\bfish", re.I)
 NOT_MEAT_NOTE = re.compile(r"ohne (schweine)?fleisch|fleischlos|gelatine|phosphat|milcheiwei", re.I)
-OPTIONAL_VEGAN = re.compile(r"(auf wunsch|auf nachfrage|oder|wahlweise|auch als|optional|dazu)\W+(\w+\W+){0,2}vegan", re.I)
+OPTIONAL_VEGAN = re.compile(r"(auf wunsch|auf nachfrage|oder|wahlweise|auch als|auch|optional|dazu)\W+(\w+\W+){0,2}vegan", re.I)
 VEGAN_NAME = re.compile(r"\bvegane?[rsnm]?\b|\(vegan\)|\bplant[- ]based\b", re.I)
-VEGGIE_NAME = re.compile(r"\bvegetarisch|\bveggie\b|\bvegetarian\b", re.I)
+VEGGIE_NAME = re.compile(r"\bvegetarisch|\bveggie\b|\bvegetarian\b|pizza \W?margherita", re.I)
 MEAT_NAME = re.compile(
     r"h[äa]hnchen|h[üu]hn|\bhuhn|pute|truthahn|\bente\b|gans\b|gefl[üu]gel|chicken|schwein|\brind|kalb|lamm|"
     r"schnitzel|bratwurst|currywurst|w[üu]rstchen|\bwurst|frikadelle|bulette|hackfleisch|hackb|\bhack\b|"
@@ -45,11 +46,11 @@ MEAT_NAME = re.compile(
     r"\bbeef|\bpork|\bfish|salmon|\btuna|bacon|k[öo]ttbullar|krustenbraten|sauerbraten|rippchen|haxe|keule|\bwild", re.I)
 # a meat word in the name does not count when the name also points to a plant-based version
 PLANT_HINT = re.compile(r"soja|tofu|seitan|tempeh|pflanz|veg|jackfruit|sonnenblumenhack|falafel|gr[üu]nkern|lupine|erbsenprotein|gem[üu]se-?(schnitzel|frikadelle|bratling|burger|wurst|nuggets)", re.I)
-PLACEHOLDER = re.compile(r"kein angebot|tagesaushang|geschlossen|salatbuffet|salat-?theke|salatbar|mensahilfe|^pommes frites$|^information|feiertag|siehe aushang|pasta bar, t[äa]glich", re.I)
+PLACEHOLDER = re.compile(r"kein angebot|tagesaushang|geschlossen|salatbuffet|salat-?theke|salatbar|mensahilfe|^pommes frites$|^information|feiertag|siehe aushang|pasta bar, t[äa]glich|^pastabuffet|^wok-?buffet$|speiseplan folgt|^zu unseren |^liebe g[äa]ste|^(vollkorn|weizen)pasta$|^wir w[üu]nschen|^heute erh[äa]lt|^die mensa .{0,40} ist ", re.I)
 SIDE_CAT = re.compile(
-    r"beilage|dessert|nachspeise|nachtisch|salat(bar|buffet|theke)|^salate?$|suppe|getr[äa]nk|backware|kuchen|geb[äa]ck|"
+    r"beilage|beil\b|beil\.|s[äa]ttigung|zwischenverpflegung|restanten|dessert|nachspeise|nachtisch|salat(bar|buffet|theke)|^salate?$|suppe|getr[äa]nk|backware|kuchen|geb[äa]ck|"
     r"\bobst|\bsides?\b|extras|zusatz|fr[üu]hst|snack|br[öo]tchen|kaffee|smoothie|bagel|croissant|s[üu][sß]e ecke|"
-    r"vorspeise|dips?\b|so[sß]en|eis\b|cafeteria|laugen|belegt|^information|blondie|brownie|waffel|muffin|cookie|s[üu][sß]speise", re.I)
+    r"vorspeise|dips?\b|so[sß]en|eis\b|cafeteria|laugen|belegt|^information|foodautomat|feiertag|^aktion$|blondie|brownie|waffel|muffin|cookie|s[üu][sß]speise", re.I)
 
 
 def classify(meal):
@@ -123,24 +124,36 @@ def monday(d):
     return d - dt.timedelta(days=d.weekday())
 
 
-def week_record(days):
-    """Aggregate one week of one canteen into counts and median student prices."""
-    seen, counts, prices = set(), {"v": 0, "g": 0, "m": 0, "u": 0}, {"v": [], "g": [], "m": []}
-    for day in days:
-        if day.get("closed"):
+def day_record(day):
+    """Classify one day of one canteen: counts per class and the student prices behind them."""
+    seen, rec = set(), {"v": 0, "g": 0, "m": 0, "u": 0, "p": {"v": [], "g": [], "m": []}}
+    if day.get("closed"):
+        return None
+    for meal in day.get("meals", []):
+        if not is_main(meal):
             continue
-        for meal in day.get("meals", []):
-            if not is_main(meal):
-                continue
-            key = (day["date"], (meal.get("name") or "").strip().lower())
-            if key in seen:
-                continue
-            seen.add(key)
-            k = classify(meal)
-            counts[k] += 1
-            p = (meal.get("prices") or {}).get("students")
-            if k in prices and p and 1.3 <= p < 15:
-                prices[k].append(p)
+        key = (meal.get("name") or "").strip().lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        k = classify(meal)
+        rec[k] += 1
+        p = (meal.get("prices") or {}).get("students")
+        if k in rec["p"] and p and 1.3 <= p < 15:
+            rec["p"][k].append(round(p, 2))
+    return rec if seen else None
+
+
+def merge_days(records):
+    """Add day records up into one week record with median student prices."""
+    counts, prices = {"v": 0, "g": 0, "m": 0, "u": 0}, {"v": [], "g": [], "m": []}
+    for r in records:
+        if not r:
+            continue
+        for k in counts:
+            counts[k] += r[k]
+        for k in prices:
+            prices[k] += r["p"][k]
     n = sum(counts.values())
     if n == 0:
         return None
@@ -151,10 +164,32 @@ def week_record(days):
     return rec
 
 
+def week_record(days):
+    """Aggregate one week of one canteen into counts and median student prices."""
+    return merge_days(day_record(d) for d in days)
+
+
+def due(name, report, today):
+    """Readers run as often as their source publishes ahead: again once the published days run out,
+    at the latest after a week, and every day while a reader is failing or only knows today."""
+    last = report.get(name) or {}
+    if not last.get("ok") or not last.get("next_run"):
+        return True
+    return today.isoformat() >= last["next_run"]
+
+
+def next_run(today, published_until):
+    until = dt.date.fromisoformat(published_until)
+    return min(today + dt.timedelta(days=7), max(today + dt.timedelta(days=1), until)).isoformat()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--weeks", type=int, default=2)
     ap.add_argument("--backfill", type=int, default=0, help="months of history, one sample week per month")
+    ap.add_argument("--all-readers", action="store_true", help="run every website reader, whether it is due or not")
+    ap.add_argument("--readers", default="", help="comma-separated reader names to run, ignoring the schedule")
+    ap.add_argument("--no-openmensa", action="store_true", help="only run the website readers")
     args = ap.parse_args()
 
     os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)
@@ -165,27 +200,58 @@ def main():
     today = dt.date.today()
     this_monday = monday(today)
 
-    # Studierendenwerke without a working OpenMensa feed: read their own websites
-    custom, report = readers.run_all(this_monday)
+    # Studierendenwerke without a working OpenMensa feed: read their own websites.
+    # Their menus are kept per day, so partial fetches (some sources only show today) add up to full weeks.
+    src_path = os.path.join(ROOT, "data", "sources.json")
+    report = json.load(open(src_path)) if os.path.exists(src_path) else {}
+    report.pop("_run", None)
+    daily = json.load(open(DAILY)) if os.path.exists(DAILY) else {}
+    names = [n for n in readers.READERS if args.all_readers or due(n, report, today)]
+    if args.readers:
+        names = [n for n in args.readers.split(",") if n in readers.READERS]
+    names.sort(key=lambda n: bool((report.get(n) or {}).get("ok")))  # readers that failed last time go first
+    print("readers due today:", ", ".join(names) or "none", flush=True)
+    custom, fresh = readers.run_all(this_monday, only=names) if names else ([], {})
+    for name, r in fresh.items():
+        r["last_run"] = today.isoformat()
+        if r.get("ok"):
+            r["next_run"] = next_run(today, r["published_until"])
+        else:  # keep what we knew, try again tomorrow
+            old = report.get(name) or {}
+            r["published_until"] = old.get("published_until")
+            r["last_ok"] = old.get("last_ok") or (old.get("last_run") if old.get("ok") else None)
+        report[name] = r
+        print("reader", name, "ok" if r.get("ok") else "FAILED", r.get("published_until") or "", r.get("error") or "", flush=True)
+    touched = {}
     for c in custom:
         mapped[c["key"]] = {"sw": c["sw"], "name": c["name"], "city": c["city"], "pos": c["pos"], "source": "website"}
-        by_week = {}
         for d in c["days"]:
-            by_week.setdefault(monday(dt.date.fromisoformat(d["date"])).isoformat(), []).append(d)
-        for wk, days in by_week.items():
-            rec = week_record(days)
+            rec = day_record(d)
             if rec:
-                weekly.setdefault(c["key"], {})[wk] = rec
+                daily.setdefault(c["key"], {})[d["date"]] = rec
+                touched.setdefault(c["key"], set()).add(monday(dt.date.fromisoformat(d["date"])).isoformat())
+    for key, wks in touched.items():
+        for wk in wks:
+            end = (dt.date.fromisoformat(wk) + dt.timedelta(days=7)).isoformat()
+            rec = merge_days(r for date, r in daily[key].items() if wk <= date < end)
+            if rec:
+                weekly.setdefault(key, {})[wk] = rec
+    cutoff = (this_monday - dt.timedelta(weeks=3)).isoformat()
+    daily = {k: {d: r for d, r in v.items() if d >= cutoff} for k, v in daily.items()}
+    json.dump({k: v for k, v in daily.items() if v}, open(DAILY, "w"), separators=(",", ":"), sort_keys=True)
     report["_run"] = today.isoformat()
-    json.dump(report, open(os.path.join(ROOT, "data", "sources.json"), "w"), indent=1, sort_keys=True)
-    for name, r in report.items():
-        if name != "_run":
-            print("reader", name, "ok" if r.get("ok") else "FAILED", r.get("published_until") or r.get("error") or "")
+    json.dump(report, open(src_path, "w"), indent=1, sort_keys=True)
     # keep canteens from a reader that failed today, so one bad day does not drop a Studierendenwerk
     if os.path.exists(CANTEENS):
         for key, info in json.load(open(CANTEENS)).items():
             if info.get("source") == "website" and key not in mapped:
                 mapped[key] = info
+    # positions looked up by hand (pipeline/tools/geocode.py) for canteens whose source gives none
+    pos_path = os.path.join(ROOT, "data", "positions.json")
+    if os.path.exists(pos_path):
+        for key, pos in json.load(open(pos_path)).items():
+            if pos and key in mapped and not mapped[key].get("pos"):
+                mapped[key]["pos"] = pos
     json.dump(mapped, open(CANTEENS, "w"), ensure_ascii=False, indent=0, sort_keys=True)
 
     starts = [this_monday - dt.timedelta(weeks=i) for i in range(args.weeks)]
@@ -197,6 +263,8 @@ def main():
             # second full week of the month, avoids most holidays at month edges
             starts.append(monday(dt.date(y, mo, 8)) + dt.timedelta(weeks=1) if monday(dt.date(y, mo, 8)).month != mo else monday(dt.date(y, mo, 8)))
     starts = sorted(set(starts))
+    if args.no_openmensa:
+        starts = []
     jobs = [(cid, s) for cid, info in mapped.items() if info.get("source") != "website" for s in starts
             if args.backfill == 0 or s >= this_monday - dt.timedelta(weeks=args.weeks) or s.isoformat() not in weekly.get(cid, {})]
     print(f"{len(mapped)} canteens, {len(starts)} weeks, {len(jobs)} requests")

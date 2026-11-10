@@ -2,53 +2,184 @@
  "_run": "2026-11-10",
  "bodensee": {
   "canteens": 5,
+  "last_run": "2026-11-10",
   "meals": 206,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-21"
  },
+ "bonn": {
+  "canteens": 7,
+  "last_run": "2026-11-10",
+  "meals": 437,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "bremen": {
+  "canteens": 10,
+  "last_run": "2026-11-10",
+  "meals": 334,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "chemnitz-zwickau": {
+  "canteens": 5,
+  "last_run": "2026-11-10",
+  "meals": 527,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "dortmund": {
+  "canteens": 12,
+  "last_run": "2026-11-10",
+  "meals": 1111,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-24"
+ },
+ "duesseldorf": {
+  "canteens": 11,
+  "last_run": "2026-11-10",
+  "meals": 164,
+  "next_run": "2026-11-16",
+  "ok": true,
+  "published_until": "2026-11-16"
+ },
+ "essen-duisburg": {
+  "canteens": 8,
+  "last_run": "2026-11-10",
+  "meals": 75,
+  "next_run": "2026-11-11",
+  "ok": true,
+  "published_until": "2026-11-10"
+ },
  "freiberg": {
   "error": "HTTP Error 403: Forbidden",
-  "ok": false
+  "last_ok": null,
+  "last_run": "2026-11-10",
+  "ok": false,
+  "published_until": null
+ },
+ "giessen": {
+  "canteens": 11,
+  "last_run": "2026-11-10",
+  "meals": 1008,
+  "next_run": "2026-11-13",
+  "ok": true,
+  "published_until": "2026-11-13"
+ },
+ "goettingen": {
+  "canteens": 4,
+  "last_run": "2026-11-10",
+  "meals": 157,
+  "next_run": "2026-11-16",
+  "ok": true,
+  "published_until": "2026-11-16"
+ },
+ "halle": {
+  "canteens": 12,
+  "last_run": "2026-11-10",
+  "meals": 1890,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "koblenz": {
+  "canteens": 3,
+  "last_run": "2026-11-10",
+  "meals": 249,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-21"
  },
  "magdeburg": {
   "canteens": 7,
+  "last_run": "2026-11-10",
   "meals": 384,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-22"
  },
  "muenchen": {
   "canteens": 24,
+  "last_run": "2026-11-10",
   "meals": 859,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-20"
  },
- "oldenburg": {
-  "canteens": 6,
-  "meals": 602,
-  "ok": true,
-  "published_until": "2026-11-22"
- },
- "ostniedersachsen": {
-  "canteens": 15,
-  "meals": 1441,
+ "oberfranken": {
+  "canteens": 12,
+  "last_run": "2026-11-10",
+  "meals": 335,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-27"
  },
+ "oldenburg": {
+  "canteens": 6,
+  "last_run": "2026-11-10",
+  "meals": 602,
+  "next_run": "2026-11-18",
+  "ok": true,
+  "published_until": "2026-11-22"
+ },
+ "osnabrueck": {
+  "canteens": 6,
+  "last_run": "2026-11-10",
+  "meals": 444,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "ost-brandenburg": {
+  "canteens": 6,
+  "last_run": "2026-11-10",
+  "meals": 588,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-27"
+ },
+ "ostniedersachsen": {
+  "canteens": 15,
+  "last_run": "2026-11-10",
+  "meals": 1441,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-27"
+ },
+ "paderborn": {
+  "canteens": 5,
+  "last_run": "2026-11-10",
+  "meals": 501,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-23"
+ },
  "rostock-wismar": {
   "canteens": 7,
+  "last_run": "2026-11-10",
   "meals": 1631,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-20"
  },
  "vorderpfalz": {
-  "canteens": 1,
-  "meals": 40,
+  "canteens": 5,
+  "last_run": "2026-11-10",
+  "meals": 212,
+  "next_run": "2026-11-17",
   "ok": true,
   "published_until": "2026-11-30"
  },
  "wuppertal": {
   "canteens": 7,
+  "last_run": "2026-11-10",
   "meals": 579,
+  "next_run": "2026-11-16",
   "ok": true,
   "published_until": "2026-11-19"
  }

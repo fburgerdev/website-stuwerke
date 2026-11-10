@@ -1,0 +1,238 @@
+{
+ "year": 2026,
+ "source": "https://www.peta.de/veganleben/vegane-mensa/",
+ "scale": "0 to 100 points; PETA calls 80 and above Gold",
+ "note": "Entries as listed on PETA's results page, collected 2026-11-10. PETA rated 57 canteens; this file holds the 46 that could be read from the page, so a Studierendenwerk missing here may still have been rated.",
+ "entries": [
+  {
+   "sw": "berlin",
+   "points": 100,
+   "canteen": "Mensa TU Veggie 2.0"
+  },
+  {
+   "sw": "bochum",
+   "points": 100,
+   "canteen": "Mensa Rote Bete"
+  },
+  {
+   "sw": "dortmund",
+   "points": 98,
+   "canteen": "Hauptmensa"
+  },
+  {
+   "sw": "bonn",
+   "points": 98,
+   "canteen": "Mensa CAMPO"
+  },
+  {
+   "sw": "kassel",
+   "points": 92,
+   "canteen": "Zentralmensa"
+  },
+  {
+   "sw": "chemnitz-zwickau",
+   "points": 92,
+   "canteen": "Mensa & Cafeteria StraNa"
+  },
+  {
+   "sw": "muenchen",
+   "points": 92,
+   "canteen": "Mensa Leopoldstraße"
+  },
+  {
+   "sw": "wuerzburg",
+   "points": 89,
+   "canteen": "Mensa Austraße Bamberg"
+  },
+  {
+   "sw": "wuerzburg",
+   "points": 89,
+   "canteen": "Mensa am Studentenhaus"
+  },
+  {
+   "sw": "leipzig",
+   "points": 89,
+   "canteen": "Mensa am Medizincampus"
+  },
+  {
+   "sw": "ostniedersachsen",
+   "points": 88,
+   "canteen": "Mensa Lüneburg"
+  },
+  {
+   "sw": "west-brandenburg",
+   "points": 87,
+   "canteen": "all canteens"
+  },
+  {
+   "sw": "hamburg",
+   "points": 87,
+   "canteen": "Mensa Blattwerk"
+  },
+  {
+   "sw": "siegen",
+   "points": 87,
+   "canteen": "Mensa AR & US"
+  },
+  {
+   "sw": "giessen",
+   "points": 87,
+   "canteen": "Mensa Fulda"
+  },
+  {
+   "sw": "giessen",
+   "points": 87,
+   "canteen": "Cafeteria am Kunstweg"
+  },
+  {
+   "sw": "giessen",
+   "points": 87,
+   "canteen": "Mensa OBS"
+  },
+  {
+   "sw": "bielefeld",
+   "points": 87,
+   "canteen": "Cafeteria Lampingstraße"
+  },
+  {
+   "sw": "essen-duisburg",
+   "points": 86,
+   "canteen": "Mensen Essen & Duisburg"
+  },
+  {
+   "sw": "kaiserslautern",
+   "points": 85,
+   "canteen": "Mensa an der RPTU"
+  },
+  {
+   "sw": "trier",
+   "points": 85,
+   "canteen": "Mensa Schneidershof & Tarforst"
+  },
+  {
+   "sw": "mainz",
+   "points": 85,
+   "canteen": "Mensa Bambus"
+  },
+  {
+   "sw": "greifswald",
+   "points": 84,
+   "canteen": "Mensa am Berthold-Beitz-Platz"
+  },
+  {
+   "sw": "ulm",
+   "points": 83,
+   "canteen": "Mensa Uni Ulm"
+  },
+  {
+   "sw": "mainz",
+   "points": 82,
+   "canteen": "Zentralmensa"
+  },
+  {
+   "sw": "augsburg",
+   "points": 82,
+   "canteen": "Mensa an der Universität Augsburg"
+  },
+  {
+   "sw": "siegen",
+   "points": 81,
+   "canteen": "Mensa AR"
+  },
+  {
+   "sw": "freiburg",
+   "points": 81,
+   "canteen": "Mensa Flugplatz"
+  },
+  {
+   "sw": "wuppertal",
+   "points": 80,
+   "canteen": "Hauptmensa ME02"
+  },
+  {
+   "sw": "wuerzburg",
+   "points": 79,
+   "canteen": "Mensa Am Hubland Campus Süd"
+  },
+  {
+   "sw": "vorderpfalz",
+   "points": 78,
+   "canteen": "Mensa Landau"
+  },
+  {
+   "sw": "siegen",
+   "points": 78,
+   "canteen": "Mensa UR"
+  },
+  {
+   "sw": "paderborn",
+   "points": 77,
+   "canteen": "Mensa Academica und Forum"
+  },
+  {
+   "sw": "ostniedersachsen",
+   "points": 77,
+   "canteen": "Mensa 2 der TU Braunschweig"
+  },
+  {
+   "sw": "ostniedersachsen",
+   "points": 76,
+   "canteen": "Mensa Hildesheim"
+  },
+  {
+   "sw": "muenster",
+   "points": 76,
+   "canteen": "Mensa Bispinghof"
+  },
+  {
+   "sw": "frankfurt",
+   "points": 75,
+   "canteen": "Cafeteria Hoagascht"
+  },
+  {
+   "sw": "marburg",
+   "points": 75,
+   "canteen": "Mensa Erlenring und Lahnberge"
+  },
+  {
+   "sw": "stuttgart",
+   "points": 72,
+   "canteen": "Mensa ABK"
+  },
+  {
+   "sw": "hannover",
+   "points": 70,
+   "canteen": "Hauptmensa"
+  },
+  {
+   "sw": "darmstadt",
+   "points": 69,
+   "canteen": "all canteens"
+  },
+  {
+   "sw": "dresden",
+   "points": 68,
+   "canteen": "Mensa Zeltschlösschen & Neue Mensa"
+  },
+  {
+   "sw": "oldenburg",
+   "points": 65,
+   "canteen": "Mensa Uhlhornsweg"
+  },
+  {
+   "sw": "schleswig-holstein",
+   "points": 65,
+   "canteen": "Mensa Kesselhaus"
+  },
+  {
+   "sw": "magdeburg",
+   "points": 62,
+   "canteen": "Mensa Unicampus"
+  },
+  {
+   "sw": "ost-brandenburg",
+   "points": 60,
+   "canteen": "Mensa Eberswalde Stadtcampus"
+  }
+ ]
+}

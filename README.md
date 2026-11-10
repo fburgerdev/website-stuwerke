@@ -3,7 +3,11 @@
 How plant-based are Germany's university canteens? A self-updating map of all 57 Studierendenwerke.
 
 - `pipeline/update.py` reads menus from [OpenMensa](https://openmensa.org), classifies main dishes and stores weekly counts in `data/weekly.json`.
-- `pipeline/readers.py` reads menus straight from the websites of Studierendenwerke that have no working OpenMensa feed. No AI involved; each reader reports how far ahead menus are published in `data/sources.json`.
+- `pipeline/readers.py` reads menus straight from the websites of Studierendenwerke that have no working OpenMensa feed (23 readers so far). No AI involved. Their menus are stored per day in `data/daily.json`, so sources that only show today still add up to full weeks.
+- Each reader runs as often as its source publishes ahead: `data/sources.json` records how far ahead menus were published and when the reader is due next (once the published days run out, at the latest after a week). A reader that failed is tried again every day, before the others. `python pipeline/update.py --all-readers` ignores the schedule; `--readers bonn,halle` runs single ones.
+- `pipeline/tools/geocode.py` looks up positions for canteens whose source gives none (run by hand; results in `data/positions.json`).
+- `data/peta.json` holds PETA Deutschland's 2026 canteen ranking as far as it could be read from their results page; it is shown as one line in a Studierendenwerk's details.
+- Still without menu data: Siegen (its website blocks the address the readers were developed from, so no reader exists yet).
 - `pipeline/tools/find_contacts.py` scans the 57 websites for published sustainability contacts and prints candidates to review by hand.
 - `pipeline/build.py` turns those counts and the reference file `data/stuwerke.json` into `docs/data.json`.
 - `docs/` is the static site (GitHub Pages). No build step, no dependencies.
