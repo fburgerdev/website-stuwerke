@@ -3925,5 +3925,459 @@
 6.080052852630615
 ],
 "sw": "aachen"
+},
+"bodensee:mensa_friedrichshafen": {
+"city": "Friedrichshafen",
+"name": "Mensa Friedrichshafen",
+"pos": [
+47.6594,
+9.4933
+],
+"source": "website",
+"sw": "bodensee"
+},
+"bodensee:mensa_giessberg": {
+"city": "Konstanz",
+"name": "Mensa Gießberg",
+"pos": [
+47.6906,
+9.1886
+],
+"source": "website",
+"sw": "bodensee"
+},
+"bodensee:mensa_htwg": {
+"city": "Konstanz",
+"name": "Mensa HTWG",
+"pos": [
+47.6672,
+9.1722
+],
+"source": "website",
+"sw": "bodensee"
+},
+"bodensee:mensa_ravensburg": {
+"city": "Ravensburg",
+"name": "Mensa Ravensburg",
+"pos": [
+47.7836,
+9.6131
+],
+"source": "website",
+"sw": "bodensee"
+},
+"bodensee:mensa_weingarten": {
+"city": "Weingarten",
+"name": "Mensa Weingarten",
+"pos": [
+47.8108,
+9.6439
+],
+"source": "website",
+"sw": "bodensee"
+},
+"muenchen:fmi-bistro": {
+"city": "85748 Garching",
+"name": "FMI Bistro Garching",
+"pos": [
+48.262408,
+11.668028
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mediziner-mensa": {
+"city": "81675 München",
+"name": "Mediziner Mensa",
+"pos": [
+48.136569,
+11.5993226
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-arcisstr": {
+"city": "München",
+"name": "Mensa Arcisstraße",
+"pos": [
+48.14742,
+11.56722
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-garching": {
+"city": "Garching",
+"name": "Mensa Garching",
+"pos": [
+48.268132,
+11.672263
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-leopoldstr": {
+"city": "München",
+"name": "Mensa Leopoldstraße",
+"pos": [
+48.156311,
+11.582446
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-lothstr": {
+"city": "München",
+"name": "Mensa Lothstraße",
+"pos": [
+48.153989,
+11.552424
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-martinsried": {
+"city": "Plategg",
+"name": "Mensa Martinsried",
+"pos": [
+48.109824,
+11.460006
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-ottobrunn": {
+"city": "82024 Taufkirchen",
+"name": "Mensa Ottobrunn-Taufkirchen",
+"pos": [
+48.048873,
+11.656094
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-pasing": {
+"city": "München",
+"name": "Mensa Pasing",
+"pos": [
+48.141568,
+11.451119
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:mensa-weihenstephan": {
+"city": "Freising",
+"name": "Mensa Weihenstephan",
+"pos": [
+48.39959,
+11.723147
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-arcisstr": {
+"city": "80333 München",
+"name": "StuBistro Arcisstraße",
+"pos": [
+48.146008,
+11.567606
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-butenandstr": {
+"city": "München",
+"name": "StuBistro Butenandstraße",
+"pos": [
+48.113744,
+11.467514
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-goethestr": {
+"city": "München",
+"name": "StuBistro Goethestraße",
+"pos": [
+48.131396,
+11.558264
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-martinsried": {
+"city": "82152 Planegg-Martinsried",
+"name": "StuBistro Martinsried",
+"pos": [
+48.109994,
+11.458461
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-rosenheim": {
+"city": "Rosenheim",
+"name": "StuBistro Rosenheim",
+"pos": [
+47.867344,
+12.107559
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stubistro-schellingstr": {
+"city": "München",
+"name": "StuBistro Schellingstraße",
+"pos": [
+48.148893,
+11.579027
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-adalbertstr": {
+"city": "München",
+"name": "StuCafé Adalbertstraße",
+"pos": [
+48.151374,
+11.580448
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-akademie-weihenstephan": {
+"city": "Freising",
+"name": "StuCafé Akademie Weihenstephan",
+"pos": [
+48.3948,
+11.729338
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-boltzmannstr": {
+"city": "Garching",
+"name": "StuBistro Boltzmannstraße",
+"pos": [
+48.265768,
+11.667593
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-connollystr": {
+"city": "München",
+"name": "StuCafé Connollystraße",
+"pos": [
+48.180179,
+11.544467
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-garching": {
+"city": "Garching",
+"name": "StuBistro Garching",
+"pos": [
+48.268268,
+11.6717
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-karlstr": {
+"city": "München",
+"name": "StuCafé Karlstraße",
+"pos": [
+48.142759,
+11.568432
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-pasing": {
+"city": "München",
+"name": "StuCafé Pasing",
+"pos": [
+48.141568,
+11.451119
+],
+"source": "website",
+"sw": "muenchen"
+},
+"muenchen:stucafe-weihenstephan-maximus": {
+"city": "85354 Freising",
+"name": "StuCafé Weihenstephan-Maximus",
+"pos": [
+48.399751,
+11.723394
+],
+"source": "website",
+"sw": "muenchen"
+},
+"ostniedersachsen:102": {
+"city": "Braunschweig",
+"name": "Mensa 1 TU Braunschweig",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:105": {
+"city": "Braunschweig",
+"name": "Mensa 2 TU Braunschweig",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:109": {
+"city": "Braunschweig",
+"name": "Bistro 4U NFF Braunschweig",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:112": {
+"city": "Wolfsburg",
+"name": "Bistro 4U Wolfsburg",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:120": {
+"city": "Braunschweig",
+"name": "Kantina Kreativa Braunschweig",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:130": {
+"city": "Wolfenbüttel",
+"name": "Mensa Wolfenbüttel",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:134": {
+"city": "Suderburg",
+"name": "Mensa Suderburg",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:140": {
+"city": "Lüneburg",
+"name": "Mensa Lüneburg",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:150": {
+"city": "Hildesheim",
+"name": "Mensa Uni Hildesheim",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:153": {
+"city": "Hildesheim",
+"name": "Bistro Bühler Campus Hildesheim",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:160": {
+"city": "Hildesheim",
+"name": "Mensa HAWK Hi Hohnsen",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:163": {
+"city": "Holzminden",
+"name": "Mensa HAWK Holzminden",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:171": {
+"city": "Clausthal-Zellerfeld",
+"name": "Mensa Clausthal",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:193": {
+"city": "Hildesheim",
+"name": "Mensa Uni Hildesheim",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"ostniedersachsen:200": {
+"city": "Salzgitter",
+"name": "Mensa Salzgitter",
+"pos": null,
+"source": "website",
+"sw": "ostniedersachsen"
+},
+"rostock-wismar:Mensa Kantilene (hmt)": {
+"city": "Rostock",
+"name": "Mensa Kantilene (hmt)",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Mensa Multiple Choice": {
+"city": "Rostock",
+"name": "Mensa Multiple Choice",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Mensa St.-Georg- Straße": {
+"city": "Rostock",
+"name": "Mensa St.-Georg- Straße",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Mensa Süd": {
+"city": "Rostock",
+"name": "Mensa Süd",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Mensa Ulme": {
+"city": "Rostock",
+"name": "Mensa Ulme",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Mensa Wismar": {
+"city": "Wismar",
+"name": "Mensa Wismar",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"rostock-wismar:Ulmen – Lounge": {
+"city": "Rostock",
+"name": "Ulmen – Lounge",
+"pos": null,
+"source": "website",
+"sw": "rostock-wismar"
+},
+"vorderpfalz:landau": {
+"city": "Landau",
+"name": "Mensa Landau",
+"pos": [
+49.2042,
+8.1078
+],
+"source": "website",
+"sw": "vorderpfalz"
 }
 }

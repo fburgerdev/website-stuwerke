@@ -17,7 +17,7 @@ GEO_NAMES = {
     "Sachsen": "SN", "Sachsen-Anhalt": "ST", "Schleswig-Holstein": "SH", "Thüringen": "TH",
 }
 WINDOW_WEEKS = 4
-MIN_DISHES = 30          # a Studierendenwerk needs this many main dishes in the window to get a number
+MIN_DISHES = 20          # a Studierendenwerk needs this many main dishes in the window to get a number
 W, H = 560, 760          # map canvas
 
 

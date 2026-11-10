@@ -14,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 from stuwerke_base import SW  # noqa: E402
+import readers  # noqa: E402
 
 API = "https://openmensa.org/api/v2"
 WEEKLY = os.path.join(ROOT, "data", "weekly.json")
@@ -28,8 +29,8 @@ EXCLUDE = re.compile(
     r"Kubiz|Technologie- und Business|Kombüse|Brandt's|SCHULGENUSS|Zinzendorf|Bucerius", re.I)
 
 # ---------- classification ----------
-VEGAN_NOTE = re.compile(r"^(=\s*)?vegan\b|\(vegan\)|men[üu] ist vegan|veganes (gericht|men[üu])|^pflanzlich$|^rein pflanzlich|veggi,vegan|^vegan$", re.I)
-VEGGIE_NOTE = re.compile(r"^(=\s*)?vegetarisch\b|^(=\s*)?vegetarian\b|men[üu] ist vegetarisch|vegetarisches (gericht|men[üu])|"
+VEGAN_NOTE = re.compile(r"^vegan\b|\(vegan\)|men[üu] ist vegan|veganes (gericht|men[üu])|^pflanzlich$|^rein pflanzlich|veggi,vegan|^vegan$", re.I)
+VEGGIE_NOTE = re.compile(r"^vegetarisch\b|^vegetarian\b|men[üu] ist vegetarisch|vegetarisches (gericht|men[üu])|"
                          r"ohne fleisch|fleischlos|^veggie?\b|ovo-lacto|^veggi,", re.I)
 MEAT_NOTE = re.compile(r"fleisch|gefl[üu]gel|schwein|\brind|\bfisch|\blamm|\bwild\b|\bkalb|\bpork|\bbeef|chicken|poultry|\bfish", re.I)
 NOT_MEAT_NOTE = re.compile(r"ohne (schweine)?fleisch|fleischlos|gelatine|phosphat|milcheiwei", re.I)
@@ -40,10 +41,10 @@ MEAT_NAME = re.compile(
     r"h[äa]hnchen|h[üu]hn|\bhuhn|pute|truthahn|\bente\b|gans\b|gefl[üu]gel|chicken|schwein|\brind|kalb|lamm|"
     r"schnitzel|bratwurst|currywurst|w[üu]rstchen|\bwurst|frikadelle|bulette|hackfleisch|hackb|\bhack\b|"
     r"gulasch|speck|schinken|salami|kassler|leberk[äa]se|d[öo]ner|gyros|cevapcici|steak|braten|roulade|"
-    r"fisch|lachs|seelachs|forelle|thunfisch|garnele|shrimp|scampi|matjes|hering|kabeljau|scholle|pangasius|"
+    r"fisch|lachs|seelachs|forelle|thunfisch|garnele|shrimp|scampi|matjes|hering|kabeljau|scholle|pangasius|\bwels\b|zander|barsch|dorsch|"
     r"\bbeef|\bpork|\bfish|salmon|\btuna|bacon|k[öo]ttbullar|krustenbraten|sauerbraten|rippchen|haxe|keule|\bwild", re.I)
 # a meat word in the name does not count when the name also points to a plant-based version
-PLANT_HINT = re.compile(r"gem[üu]se|soja|tofu|seitan|tempeh|linsen|kichererbse|erbsen|bohnen|pflanz|veg|falafel|jackfruit|sonnenblumen|pilz|champignon|k[äa]se|dinkel|gr[üu]nkern|hafer|lupine", re.I)
+PLANT_HINT = re.compile(r"soja|tofu|seitan|tempeh|pflanz|veg|jackfruit|sonnenblumenhack|falafel|gr[üu]nkern|lupine|erbsenprotein|gem[üu]se-?(schnitzel|frikadelle|bratling|burger|wurst|nuggets)", re.I)
 PLACEHOLDER = re.compile(r"kein angebot|tagesaushang|geschlossen|salatbuffet|salat-?theke|salatbar|mensahilfe|^pommes frites$|^information|feiertag|siehe aushang|pasta bar, t[äa]glich", re.I)
 SIDE_CAT = re.compile(
     r"beilage|dessert|nachspeise|nachtisch|salat(bar|buffet|theke)|^salate?$|suppe|getr[äa]nk|backware|kuchen|geb[äa]ck|"
@@ -161,10 +162,32 @@ def main():
     mapped = map_canteens(all_canteens())
     if len(mapped) < 100:
         sys.exit("canteen list looks broken, aborting without changes")
-    json.dump(mapped, open(CANTEENS, "w"), ensure_ascii=False, indent=0, sort_keys=True)
-
     today = dt.date.today()
     this_monday = monday(today)
+
+    # Studierendenwerke without a working OpenMensa feed: read their own websites
+    custom, report = readers.run_all(this_monday)
+    for c in custom:
+        mapped[c["key"]] = {"sw": c["sw"], "name": c["name"], "city": c["city"], "pos": c["pos"], "source": "website"}
+        by_week = {}
+        for d in c["days"]:
+            by_week.setdefault(monday(dt.date.fromisoformat(d["date"])).isoformat(), []).append(d)
+        for wk, days in by_week.items():
+            rec = week_record(days)
+            if rec:
+                weekly.setdefault(c["key"], {})[wk] = rec
+    report["_run"] = today.isoformat()
+    json.dump(report, open(os.path.join(ROOT, "data", "sources.json"), "w"), indent=1, sort_keys=True)
+    for name, r in report.items():
+        if name != "_run":
+            print("reader", name, "ok" if r.get("ok") else "FAILED", r.get("published_until") or r.get("error") or "")
+    # keep canteens from a reader that failed today, so one bad day does not drop a Studierendenwerk
+    if os.path.exists(CANTEENS):
+        for key, info in json.load(open(CANTEENS)).items():
+            if info.get("source") == "website" and key not in mapped:
+                mapped[key] = info
+    json.dump(mapped, open(CANTEENS, "w"), ensure_ascii=False, indent=0, sort_keys=True)
+
     starts = [this_monday - dt.timedelta(weeks=i) for i in range(args.weeks)]
     if args.backfill:
         for m in range(1, args.backfill + 1):
@@ -174,7 +197,7 @@ def main():
             # second full week of the month, avoids most holidays at month edges
             starts.append(monday(dt.date(y, mo, 8)) + dt.timedelta(weeks=1) if monday(dt.date(y, mo, 8)).month != mo else monday(dt.date(y, mo, 8)))
     starts = sorted(set(starts))
-    jobs = [(cid, s) for cid in mapped for s in starts
+    jobs = [(cid, s) for cid, info in mapped.items() if info.get("source") != "website" for s in starts
             if args.backfill == 0 or s >= this_monday - dt.timedelta(weeks=args.weeks) or s.isoformat() not in weekly.get(cid, {})]
     print(f"{len(mapped)} canteens, {len(starts)} weeks, {len(jobs)} requests")
 

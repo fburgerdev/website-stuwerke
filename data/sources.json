@@ -1,0 +1,49 @@
+{
+ "_run": "2026-11-10",
+ "bodensee": {
+  "canteens": 5,
+  "meals": 206,
+  "ok": true,
+  "published_until": "2026-11-21"
+ },
+ "freiberg": {
+  "error": "HTTP Error 403: Forbidden",
+  "ok": false
+ },
+ "magdeburg": {
+  "error": "HTTP Error 403: Forbidden",
+  "ok": false
+ },
+ "muenchen": {
+  "canteens": 24,
+  "meals": 859,
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "oldenburg": {
+  "error": "HTTP Error 403: Forbidden",
+  "ok": false
+ },
+ "ostniedersachsen": {
+  "canteens": 15,
+  "meals": 1441,
+  "ok": true,
+  "published_until": "2026-11-27"
+ },
+ "rostock-wismar": {
+  "canteens": 7,
+  "meals": 1631,
+  "ok": true,
+  "published_until": "2026-11-20"
+ },
+ "vorderpfalz": {
+  "canteens": 1,
+  "meals": 40,
+  "ok": true,
+  "published_until": "2026-11-30"
+ },
+ "wuppertal": {
+  "error": "HTTP Error 403: Forbidden",
+  "ok": false
+ }
+}
