@@ -4434,6 +4434,20 @@
 "source": "website",
 "sw": "essen-duisburg"
 },
+"freiberg:freiberg": {
+"city": "Freiberg",
+"name": "Mensa Freiberg",
+"pos": null,
+"source": "website",
+"sw": "freiberg"
+},
+"freiberg:mittweida": {
+"city": "Mittweida",
+"name": "Mensa Mittweida",
+"pos": null,
+"source": "website",
+"sw": "freiberg"
+},
 "giessen:114": {
 "city": "Gießen",
 "name": "Mensa THM Gießen",

@@ -57,11 +57,12 @@
   "published_until": "2026-11-10"
  },
  "freiberg": {
-  "error": "HTTP Error 403: Forbidden",
-  "last_ok": null,
+  "canteens": 2,
   "last_run": "2026-11-10",
-  "ok": false,
-  "published_until": null
+  "meals": 85,
+  "next_run": "2026-11-17",
+  "ok": true,
+  "published_until": "2026-11-19"
  },
  "giessen": {
   "canteens": 11,
