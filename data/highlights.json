@@ -1,0 +1,58 @@
+[
+ {
+  "sw": "berlin",
+  "title": "Mensa TU Veggie 2.0",
+  "text": "A fully plant-based canteen at TU Berlin, open since April 2019. It was Berlin's first.",
+  "lat": 52.5096,
+  "lon": 13.3259,
+  "source": "https://www.hogapage.de/nachrichten/food/ernaehrung/berlin-eroeffnet-rein-vegane-mensa/"
+ },
+ {
+  "sw": "bochum",
+  "title": "Rote Bete",
+  "text": "AKAFÖ's fully plant-based restaurant on the Ruhr-Universität campus, opened on 11 January 2022.",
+  "lat": 51.44295,
+  "lon": 7.26256,
+  "source": "https://www.studierendenwerke.de/aktuelles/nachrichten/nachricht/akafoe-eroeffnet-veganes-restaurant-rote-bete"
+ },
+ {
+  "sw": "mannheim",
+  "title": "v²onnem plant-based butchery",
+  "text": "The Studierendenwerk makes its own plant-based alternatives to meat in-house and serves them across its canteens. Registered as a brand in 2025.",
+  "lat": 49.483,
+  "lon": 8.4625,
+  "source": "https://www.uni-mannheim.de/en/newsroom/forum/edition-1-2026/campus-life/vegan-butcher-shop/"
+ },
+ {
+  "sw": "stuttgart",
+  "title": "Mensa Kunstakademie",
+  "text": "A canteen without meat, with a mostly plant-based menu. Rated 4.5 of 5 in PETA's 2025 canteen ranking.",
+  "lat": 48.8007,
+  "lon": 9.1747,
+  "source": "https://www.studierendenwerk-stuttgart.de/en/about-us/news/message/auszeichnung-vegan-freundliche-mensa"
+ },
+ {
+  "sw": "halle",
+  "title": "Mensa Neuwerk, fully plant-based January",
+  "text": "Ran a fully plant-based menu for the whole of January 2026.",
+  "lat": 51.4906,
+  "lon": 11.9573,
+  "source": "https://www.hogapage.de/nachrichten/food/ernaehrung/veganuary-2026-macht-ern%C3%A4hrungswandel-in-mensen-und-kantinen-sichtbar/"
+ },
+ {
+  "sw": "wuerzburg",
+  "title": "Mensateria Hubland Nord",
+  "text": "The student parliament resolved in November 2025 that this canteen should reopen without meat, and that a fully plant-based canteen be examined afterwards.",
+  "lat": 49.787,
+  "lon": 9.985,
+  "source": "https://www.uni-wuerzburg.de/fileadmin/99122200/2026/2025-11-13_A4-funktion-der-mensateria.pdf"
+ },
+ {
+  "sw": "bodensee",
+  "title": "Plant-based Thursdays trial",
+  "text": "Tested a plant-based-only menu on four Thursdays in January 2026 and surveyed guests about it.",
+  "lat": 47.6906,
+  "lon": 9.1886,
+  "source": "https://seezeit.com/fileadmin/Kundendaten/Downloads/01_Essen/04_Oekologie_und_Nachhaltigkeit/260220_HG_Umfrage_Veganuary_Auswertung.pdf"
+ }
+]

@@ -1,4 +1,44 @@
 [
- {"id":"dsw","name":"Deutsches Studierendenwerk (DSW)","scope":"Germany","states":[],"what":"National association of all 57 Studierendenwerke. Represents them politically and publishes the yearly statistics this site uses for student numbers.","website":"https://www.studierendenwerke.de","source":"https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf"},
- {"id":"arge-nrw","name":"Arbeitsgemeinschaft Studierendenwerke NRW","scope":"North Rhine-Westphalia","states":["NW"],"what":"Working group of the twelve Studierendenwerke in North Rhine-Westphalia. Publishes a joint yearly performance report.","website":"https://www.studierendenwerke-nrw.de","source":"https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe Downloads/Leistungsbilanz 2023 der Studierendenwerke NRW.pdf"}
+ {
+  "id": "dsw",
+  "name": "Deutsches Studierendenwerk (DSW)",
+  "scope": "Germany",
+  "states": [],
+  "what": "National association of all 57 Studierendenwerke. Represents them politically and publishes the yearly statistics this site uses for student numbers.",
+  "website": "https://www.studierendenwerke.de",
+  "source": "https://www.studierendenwerke.de/fileadmin/user_upload/251124_DSW_Zsp2425_final.pdf"
+ },
+ {
+  "id": "arge-nrw",
+  "name": "Arbeitsgemeinschaft Studierendenwerke NRW",
+  "scope": "North Rhine-Westphalia",
+  "states": [
+   "NW"
+  ],
+  "what": "Working group of the twelve Studierendenwerke in North Rhine-Westphalia. Publishes a joint yearly performance report.",
+  "website": "https://www.studierendenwerke-nrw.de",
+  "source": "https://www.studierendenwerk-aachen.de/files/content/Downloads/Externe Downloads/Leistungsbilanz 2023 der Studierendenwerke NRW.pdf"
+ },
+ {
+  "id": "arge-nds",
+  "name": "Arbeitsgemeinschaft Niedersächsischer Studentenwerke",
+  "scope": "Lower Saxony",
+  "states": [
+   "NI"
+  ],
+  "what": "Represents the shared interests of Lower Saxony's Studierendenwerke towards the state government. Each one is represented by its managing director.",
+  "website": "https://stw-on.de/downloads/Studentenwerke-fordern-mehr-Geld.pdf",
+  "source": "https://stw-on.de/downloads/Studentenwerke-fordern-mehr-Geld.pdf"
+ },
+ {
+  "id": "arge-suedwest",
+  "name": "ARGE Studierendenwerke Süd-West, Arbeitsgruppe Baden-Württemberg",
+  "scope": "Baden-Württemberg",
+  "states": [
+   "BW"
+  ],
+  "what": "Working group of the managing directors of Baden-Württemberg's Studierendenwerke. Speaks jointly to state politics, for example with election questionnaires.",
+  "website": "https://www.studierendenwerk-stuttgart.de/fileadmin/Mediendatenbank_Studierendenwerk/07_Ueber_uns_SW_Stgt_gesamt/077_Pressemitteilungen/2021-02-23_PM_Wahlpruefsteine_Studierendenwerke_BW.pdf",
+  "source": "https://www.studierendenwerk-stuttgart.de/fileadmin/Mediendatenbank_Studierendenwerk/07_Ueber_uns_SW_Stgt_gesamt/077_Pressemitteilungen/2021-02-23_PM_Wahlpruefsteine_Studierendenwerke_BW.pdf"
+ }
 ]

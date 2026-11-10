@@ -3,11 +3,13 @@
 How plant-based are Germany's university canteens? A self-updating map of all 57 Studierendenwerke.
 
 - `pipeline/update.py` reads menus from [OpenMensa](https://openmensa.org), classifies main dishes and stores weekly counts in `data/weekly.json`.
+- `pipeline/readers.py` reads menus straight from the websites of Studierendenwerke that have no working OpenMensa feed. No AI involved; each reader reports how far ahead menus are published in `data/sources.json`.
+- `pipeline/tools/find_contacts.py` scans the 57 websites for published sustainability contacts and prints candidates to review by hand.
 - `pipeline/build.py` turns those counts and the reference file `data/stuwerke.json` into `docs/data.json`.
 - `docs/` is the static site (GitHub Pages). No build step, no dependencies.
 - `.github/workflows/update.yml` runs both scripts every day and commits the result.
 
-`data/stuwerke.json` and `data/umbrella.json` are curated by hand or by a research agent: universities served, published contacts, decisions and announcements, each with a source.
+`data/stuwerke.json`, `data/umbrella.json` and `data/highlights.json` are curated by hand or by a research agent: universities served, published contacts, decisions and announcements, each with a source.
 
 Run locally:
 

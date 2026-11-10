@@ -75,6 +75,8 @@ def main():
     canteens = json.load(open(D("data", "canteens.json")))
     ref = json.load(open(D("data", "stuwerke.json")))
     umbrella = json.load(open(D("data", "umbrella.json")))
+    highlights = json.load(open(D("data", "highlights.json")))
+    sources = json.load(open(D("data", "sources.json"))) if os.path.exists(D("data", "sources.json")) else {}
     paths, box = build_map()
 
     today = dt.date.today()
@@ -110,6 +112,8 @@ def main():
         rec["x"], rec["y"] = project(s["lon"], s["lat"], box)
         rec["quality"] = q
         rec["has_feed"] = bool(cur)
+        rec["source"] = "website" if any(canteens[c].get("source") == "website" for c in cids) else "openmensa" if cids else None
+        rec["published_until"] = (sources.get(s["id"]) or {}).get("published_until")
         if q != "none":
             rec["now"] = cur
             prev = shares(agg(cids, year_ago))
@@ -132,7 +136,8 @@ def main():
             for cid in cids:
                 sh = shares(agg([cid], window))
                 if sh and sh["n"] >= 10:
-                    cl.append({"name": canteens[cid]["name"], "n": sh["n"], "vegan": sh["vegan"], "vegetarian": sh["vegetarian"]})
+                    cl.append({"name": canteens[cid]["name"], "city": canteens[cid].get("city"), "pos": canteens[cid].get("pos"),
+                               "n": sh["n"], "vegan": sh["vegan"], "vegetarian": sh["vegetarian"]})
             rec["canteens"] = sorted(cl, key=lambda c: -c["vegan"])
         out.append(rec)
 
@@ -156,11 +161,23 @@ def main():
             "change": round(sum(i["change"] * i["students"] for i in ch) / tot_ch, 4) if tot_ch else None,
         }
 
+    # highlights: curated ones, plus any canteen whose menu was (almost) entirely plant-based in the window
+    hl = [dict(h, auto=False) for h in highlights]
+    for i in out:
+        for c in i.get("canteens", []):
+            if c["vegan"] >= 0.95 and c["n"] >= 15 and c.get("pos"):
+                if any(abs(h["lat"] - c["pos"][0]) < 0.004 and abs(h["lon"] - c["pos"][1]) < 0.006 for h in hl):
+                    continue
+                hl.append({"sw": i["id"], "title": c["name"], "auto": True, "lat": c["pos"][0], "lon": c["pos"][1], "source": None,
+                           "text": "Every main dish on this canteen's menu was labelled plant-based over the last four weeks."})
+    for h in hl:
+        h["x"], h["y"] = project(h["lon"], h["lat"], box)
+
     states = []
     for code, name in STATES.items():
         items = [i for i in out if i["state"] == code]
         states.append({"code": code, "name": name, "path": paths[code], **summary(items),
-                       "umbrella": [u["id"] for u in umbrella if code in u.get("states", [])]})
+                       "umbrella": [u["id"] for u in umbrella if code in u.get("states", [])], "members": [i["id"] for i in items]})
 
     # national monthly series, student-weighted over the Studierendenwerke that have that month
     months = sorted({p[0] for i in out for p in i.get("series", [])})
@@ -173,7 +190,7 @@ def main():
 
     data = {
         "updated": today.isoformat(), "window": [window[0], window[-1]] if window else None,
-        "national": {**summary(out), "series": nat}, "states": states, "stuwerke": out, "umbrella": umbrella,
+        "national": {**summary(out), "series": nat}, "states": states, "stuwerke": out, "umbrella": umbrella, "highlights": hl,
         "map": {"w": W, "h": round((55.1 - 47.2) * box[4] / 0.6157)},
     }
     os.makedirs(D("docs"), exist_ok=True)
