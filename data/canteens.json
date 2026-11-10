@@ -3976,6 +3976,55 @@
 "source": "website",
 "sw": "bodensee"
 },
+"magdeburg:halberstadt": {
+"city": "Halberstadt",
+"name": "Mensa DomCafete",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:magdeburg_herrenkrug": {
+"city": "Magdeburg",
+"name": "Mensa Herrenkrug",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:magdeburg_kellercafe": {
+"city": "Magdeburg",
+"name": "Kellercafé",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:magdeburg_unicampus_o": {
+"city": "Magdeburg",
+"name": "Mensa UniCampus oben",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:magdeburg_unicampus_u": {
+"city": "Magdeburg",
+"name": "Mensa UniCampus unten",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:stendal": {
+"city": "Stendal",
+"name": "Mensa Stendal",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
+"magdeburg:wernigerode": {
+"city": "Wernigerode",
+"name": "Mensa Wernigerode",
+"pos": null,
+"source": "website",
+"sw": "magdeburg"
+},
 "muenchen:fmi-bistro": {
 "city": "85748 Garching",
 "name": "FMI Bistro Garching",
@@ -4216,6 +4265,48 @@
 "source": "website",
 "sw": "muenchen"
 },
+"oldenburg:elsfleth": {
+"city": "Elsfleth",
+"name": "Mensa Elsfleth",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
+"oldenburg:emden": {
+"city": "Emden",
+"name": "Mensa Emden",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
+"oldenburg:ofener_str": {
+"city": "Oldenburg",
+"name": "Mensa Ofener Str.",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
+"oldenburg:uh": {
+"city": "Oldenburg",
+"name": "Mensa Uhlhornsweg",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
+"oldenburg:wechloy": {
+"city": "Oldenburg",
+"name": "Mensa Wechloy",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
+"oldenburg:whv": {
+"city": "Wilhelmshaven",
+"name": "Mensa Wilhelmshaven",
+"pos": null,
+"source": "website",
+"sw": "oldenburg"
+},
 "ostniedersachsen:102": {
 "city": "Braunschweig",
 "name": "Mensa 1 TU Braunschweig",
@@ -4379,5 +4470,54 @@
 ],
 "source": "website",
 "sw": "vorderpfalz"
+},
+"wuppertal:bergische_univ": {
+"city": "Wuppertal",
+"name": "Mensa ME 02",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:bihasp": {
+"city": "Wuppertal",
+"name": "Bistro am Haspel",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:cafgebme": {
+"city": "Wuppertal",
+"name": "C@feteria ME 03",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:ccfme": {
+"city": "Wuppertal",
+"name": "Cafeteria Campus Freudenberg FME",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:kngebme": {
+"city": "Wuppertal",
+"name": "Kneipe ME 04",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:mhs": {
+"city": "Wuppertal",
+"name": "Mensa Hochschule für Musik und Tanz",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
+},
+"wuppertal:sport_design": {
+"city": "Wuppertal",
+"name": "Cafeteria Sport + Design",
+"pos": null,
+"source": "website",
+"sw": "wuppertal"
 }
 }

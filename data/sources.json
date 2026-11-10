@@ -11,8 +11,10 @@
   "ok": false
  },
  "magdeburg": {
-  "error": "HTTP Error 403: Forbidden",
-  "ok": false
+  "canteens": 7,
+  "meals": 384,
+  "ok": true,
+  "published_until": "2026-11-22"
  },
  "muenchen": {
   "canteens": 24,
@@ -21,8 +23,10 @@
   "published_until": "2026-11-20"
  },
  "oldenburg": {
-  "error": "HTTP Error 403: Forbidden",
-  "ok": false
+  "canteens": 6,
+  "meals": 602,
+  "ok": true,
+  "published_until": "2026-11-22"
  },
  "ostniedersachsen": {
   "canteens": 15,
@@ -43,7 +47,9 @@
   "published_until": "2026-11-30"
  },
  "wuppertal": {
-  "error": "HTTP Error 403: Forbidden",
-  "ok": false
+  "canteens": 7,
+  "meals": 579,
+  "ok": true,
+  "published_until": "2026-11-19"
  }
 }
