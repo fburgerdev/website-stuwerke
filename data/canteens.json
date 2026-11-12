@@ -1337,6 +1337,15 @@
 ],
 "sw": "bielefeld"
 },
+"1799": {
+"city": "Nürnberg",
+"name": "Löhe-Mensa",
+"pos": [
+49.45498695,
+11.063194256832578
+],
+"sw": "erlangen-nuernberg"
+},
 "180": {
 "city": "Göttingen",
 "name": "Göttingen, Nordmensa",
